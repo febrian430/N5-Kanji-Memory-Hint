@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "memory-hint",
+    "slug": "memory-hint",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "memory-hint"
+}
