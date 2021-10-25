@@ -1,0 +1,118 @@
+{
+    "kanji_collection": [
+        {
+            "name": "kanji A",
+            "meaning": "meaning A",
+            "pronounciation": "pronounc A",
+            "chapter": 1
+        }, 
+        {
+            "name": "kanji B",
+            "meaning": "meaning B",
+            "pronounciation": "pronounc B",
+            "chapter": 1
+        }, 
+        {
+            "name": "kanji C",
+            "meaning": "meaning C",
+            "pronounciation": "pronounc C",
+            "chapter": 1
+        }, 
+        {
+            "name": "kanji D",
+            "meaning": "meaning D",
+            "pronounciation": "pronounc D",
+            "chapter": 1
+        }, 
+        {
+            "name": "kanji uoiy",
+            "meaning": "meaning uoiy",
+            "pronounciation": "pronounc uoiy",
+            "chapter": 2
+        }, 
+        {
+            "name": "kanji bt",
+            "meaning": "meaning bt",
+            "pronounciation": "pronounc bt",
+            "chapter": 2
+        }, 
+        {
+            "name": "kanji eh",
+            "meaning": "meaning eh",
+            "pronounciation": "pronounc eh",
+            "chapter": 2
+        }, 
+        {
+            "name": "kanji 12",
+            "meaning": "meaning 12",
+            "pronounciation": "pronounc 12",
+            "chapter": 3
+        }, 
+        {
+            "name": "kanji 58",
+            "meaning": "meaning 58",
+            "pronounciation": "pronounc 58",
+            "chapter": 3
+        }, 
+        {
+            "name": "kanji yj",
+            "meaning": "meaning yj",
+            "pronounciation": "pronounc yj",
+            "chapter": 3
+        }, 
+        {
+            "name": "kanji bv",
+            "meaning": "meaning bv",
+            "pronounciation": "pronounc bv",
+            "chapter": 4
+        }, 
+        {
+            "name": "kanji ht",
+            "meaning": "meaning ht",
+            "pronounciation": "pronounc ht",
+            "chapter": 4
+        }, 
+        {
+            "name": "kanji rq",
+            "meaning": "meaning rq",
+            "pronounciation": "pronounc rq",
+            "chapter": 4
+        }, 
+        {
+            "name": "kanji ewe",
+            "meaning": "meaning ewe",
+            "pronounciation": "pronounc ewe",
+            "chapter": 5
+        }, 
+        {
+            "name": "kanji xd",
+            "meaning": "meaning xd",
+            "pronounciation": "pronounc xd",
+            "chapter": 5
+        }, 
+        {
+            "name": "kanji az",
+            "meaning": "meaning az",
+            "pronounciation": "pronounc az",
+            "chapter": 5
+        }, 
+        {
+            "name": "kanji tjgh",
+            "meaning": "meaning tjgh",
+            "pronounciation": "pronounc tjgh",
+            "chapter": 6
+        }, 
+        {
+            "name": "kanji wd",
+            "meaning": "meaning wd",
+            "pronounciation": "pronounc wd",
+            "chapter": 6
+        }, 
+        {
+            "name": "kanji wq",
+            "meaning": "meaning wq",
+            "pronounciation": "pronounc wq",
+            "chapter": 6
+        }
+    ]
+}
