@@ -1,85 +1,104 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { Alert, FlatList, StatusBar, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import shuffle from "../../helpers/shuffler";
 import kanji from "../../assets/data/kanji.json"
+import { Full } from "../horizontal_scroll";
 
-const Option = ({value, onPress, backgroundColor, textColor}) => {
+const Option = ({value, onPress, disabled, selected}) => {
+
+  let style = styles.option_default
+  if(disabled) {
+    style = styles.option_solved
+  } else if(selected) {
+    style = styles.option_selected
+  }
+
+  const { backgroundColor, borderColor, color } = style
+  const wrapperStyle = { backgroundColor, borderColor }
+
   return (
-    <TouchableOpacity onPress={onPress} style={[styles.item, backgroundColor]}>
-      <Text style={[styles.title, textColor]}>{value}</Text>
+    <TouchableOpacity onPress={onPress} style={[styles.item, wrapperStyle]} disabled={disabled}>
+      <Text style={[styles.title, {color}]}>{value}</Text>
     </TouchableOpacity>
   )
 }
 
 const MemoryHint = ({ route }) => {
 
-  const [options, setOptions] = useState([])
-  const [solved, setSolved] = useState([])
-  const [selected, setSelected] = useState([]);
+    const [options, setOptions] = useState([0])
+    const [solved, setSolved] = useState([])
+    const [selected, setSelected] = useState([])
+    const [wrongCount, setWrongCount] = useState(0)
 
-  useEffect(() => {
-    const selectedChapters = route.params.chapters
-    var source = kanji.kanji_collection.filter((kanji) => selectedChapters.includes(kanji.chapter))
+    const isStarted = useRef(false)
 
-    //make options datasource
-    names = source.map((element) =>  { return { value: element.name, key: element.meaning }})
-    meanings = source.map((element) => { return { value: element.meaning, key: element.name }} )
-    mixed = [...names, ...meanings]
-    mixed = shuffle(mixed)
-    console.log(mixed)
-    setOptions([...mixed])
+    useEffect(() => {
+      const selectedChapters = route.params.chapters
 
-  }, [])
+      var source = kanji.kanji_collection.filter((kanji) => selectedChapters.includes(kanji.chapter))
+      names = source.map((element) =>  { return { value: element.name, key: element.meaning }})
+      meanings = source.map((element) => { return { value: element.meaning, key: element.name }} )
 
-  const pushToSelected = (item) => {
-    if(selected.length == 0) {
-      setSelected([...selected, item])
-    } else {
-      if(selected[0].value === item.key) {
-        setSolved([...solved, item, selected[0]])
+      mixed = [...names, ...meanings]
+      mixed = shuffle(mixed)
+
+      setOptions([...mixed])
+    }, [])
+
+    const select = (option) => {
+      if(selected.length == 0) {
+        setSelected([...selected, option])
+      } else {
+        if(selected[0].value === option.key) {
+          setSolved([...solved, option, selected[0]])
+        } else {
+          setWrongCount(wrongCount+1)
+        }
+        setSelected([])
       }
+      console.log(selected)
+    }
+
+    const deselect = () => {
       setSelected([])
     }
-    console.log(selected)
 
-  }
-
-  const drawOptionColor = (isSelected, isSolved) => {
-    if(isSelected) {
-      return {backgroundColor: "green", color: "white"}
+    const onOptionPress = (option) => {
+      if(selected[0]?.value === option.value) {
+        deselect()
+      } else {
+        select(option)
+      }
     }
-    if(isSolved) {
-      return { backgroundColor: "gray", color: "white"}
-    }
-    return { backgroundColor: "white", color: "black"}
-  }
 
-  const renderItem = ({ item }) => {
-    const isSelected = selected.some((option) => option.value === item.value)
-    const isSolved = solved.some((option) => option.value === item.value)
+    useEffect(() => {
+      if(isStarted && solved.length === options.length) {
+        alert(`Finished. Wrong attempts: ${wrongCount}`)
+      }
+    }, [solved])
 
-    const { backgroundColor, color } = drawOptionColor(isSelected, isSolved)
+    const renderItem = ({ item, index }) => {
+      return (
+        <Option
+          key={index}
+          value={item.value}
+          onPress={() => onOptionPress(item)}
+          disabled={solved.includes(item)}
+          selected={selected.includes(item)}
+        />
+      );
+    };
 
     return (
-      <Option
-        value={item.value}
-        onPress={() => pushToSelected(item)}
-        backgroundColor={{ backgroundColor }}
-        textColor={{ color }}
-      />
+      <Full style={[styles.container]}>
+        <FlatList
+          data={options}
+          renderItem={renderItem}
+          keyExtractor={(item) => item.value}
+          extraData={selected}
+        />
+      </Full>
     );
-  };
-
-  return (
-    <View style={styles.container}>
-      <FlatList
-        data={options}
-        renderItem={renderItem}
-        keyExtractor={(item) => item.value}
-        extraData={selected}
-      />
-    </View>
-  );
 };
 
 const styles = StyleSheet.create({
@@ -87,16 +106,34 @@ const styles = StyleSheet.create({
     flex: 1,
     marginTop: StatusBar.currentHeight || 0,
   },
+
   item: {
     padding: 20,
     marginVertical: 8,
     marginHorizontal: 16,
+    borderWidth: 2,
     color: "white",
     backgroundColor: "green",
   },
-  item_revealed: {
+
+  option_default: {
     backgroundColor: "white",
+    color: "black",
+    borderColor: "black"
   },
+
+  option_selected: {
+    backgroundColor: "green", 
+    color: "white",
+    borderColor: "green" 
+  },
+
+  option_solved: {
+    backgroundColor: "grey", 
+    color: "white",
+    borderColor: "grey" 
+  },
+
   title: {
     fontSize: 32,
   },
