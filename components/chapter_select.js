@@ -17,6 +17,7 @@ export default ChapterSelect = ({ navigation, route }) => {
     const [triggerOnSelect, setTriggerOnSelect] = useState(false)
     const [selected, setSelected] = useState([])
     const [renderNext, setRenderNext] = useState(null)
+    const [buttonTitle, setButtonTitle] = useState("Next Act")
 
     const [chapterNumbers, setChapterNumbers] = useState([])
 
@@ -26,11 +27,25 @@ export default ChapterSelect = ({ navigation, route }) => {
             .filter((chapter, index, self) => self.indexOf(chapter) === index)
         setChapterNumbers([...cNumbers])
 
-        setRenderNext(route.params.renderNext)
-        if(route.params.multi) {
+        const params = route.params
+        setRenderNext(params.renderNext)
+
+        if(params.buttonTitle) {
+            setButtonTitle(params.buttonTitle)
+        }
+
+        if(params.multi) {
             setMulti(true)
+        } else if(params.triggerOnSelect){
+            setTriggerOnSelect(true)
         }
     }, [])  
+
+    useEffect(() => {
+        if(triggerOnSelect) {
+            nextScreen()
+        }
+    }, [selected])
 
     const onChapterSelect = (item) => {
         if(selected.includes(item)) {
@@ -38,8 +53,14 @@ export default ChapterSelect = ({ navigation, route }) => {
         } else if(multi) {
             setSelected([...selected, item])
         } else {
-            setSelected([item])
+            setSelected([item]) 
         }
+    }
+
+    const nextScreen = () => {
+        navigation.navigate(renderNext, {
+            chapters: selected
+        })
     }
 
     const renderChapters = ({item}) => {
@@ -61,7 +82,9 @@ export default ChapterSelect = ({ navigation, route }) => {
                 extraData={selected}
             />
 
-            <Button onPress={() => console.log(selected)} title="Next Act" />
+            <Button 
+                title={buttonTitle} 
+                onPress={nextScreen}  />
         </View>
     )
 }
@@ -71,7 +94,7 @@ const styles = StyleSheet.create({
         backgroundColor: "blue",
         color: "white"
     },
-
+    
     title: {
         fontSize: 32
     }

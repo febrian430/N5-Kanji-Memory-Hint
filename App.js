@@ -26,11 +26,13 @@ const Home = ({ navigation }) => {
       />
 
       <Button 
-        title="Chapter Select"
+        title="Multiple Choice"
         onPress= {() => navigation.navigate('Chapter Select', 
         {
-          multi: false,
-          renderNext: ""
+          multi: true,
+          triggerOnSelect: true,
+          renderNext: "Multiple Choice",
+          buttonTitle: "Start multiple choice"
         })}
       />
        {/* <MemoryHint />
@@ -62,8 +64,6 @@ export default function App() {
         <Stack.Screen name="Chapter Select" component={ChapterSelect} />
         <Stack.Screen name="Multiple Choice" component={MultipleChoice} />
         <Stack.Screen name="Mix-Match" component={MemoryHint} />
-
-
       </Stack.Navigator>
     </NavigationContainer>
   );
