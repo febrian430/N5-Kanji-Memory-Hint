@@ -2,12 +2,14 @@ import React, { useEffect, useState } from "react";
 import { Button, FlatList, StyleSheet, Text, View, TouchableOpacity } from "react-native";
 import Kanji from '../assets/data/kanji.json'
 
-const Chapter = ({onPress, title, isSelected}) => {
-    const selectedStyle = isSelected ? styles.button_selected : null
-    console.log(selectedStyle)
+const Chapter = ({onPress, title, selected}) => {
+    const selectedStyle = selected ? styles.button_selected : styles.button
+
+    const { backgroundColor, color } = selectedStyle
+
     return (
-        <TouchableOpacity style={[selectedStyle]} onPress={onPress} >
-            <Text style={[styles.title]}>{title}</Text>
+        <TouchableOpacity style={[{backgroundColor}]} onPress={onPress} >
+            <Text style={[styles.title, {color}]}>{title}</Text>
         </TouchableOpacity>
     )
 }
@@ -68,7 +70,7 @@ const ChapterSelect = ({ navigation, route }) => {
             <Chapter  
                 onPress={() => onChapterSelect(item)}
                 title={`Chapter ${item}`}
-                isSelected={selected.includes(item)}
+                selected={selected.includes(item)}
             />
         )
     }
@@ -91,10 +93,13 @@ const ChapterSelect = ({ navigation, route }) => {
 
 const styles = StyleSheet.create({
     button_selected: {
-        backgroundColor: "blue",
+        backgroundColor: "grey",
         color: "white"
     },
-
+    button: {
+        backgroundColor: "white",
+        color: "black"
+    },
     title: {
         fontSize: 32
     }
