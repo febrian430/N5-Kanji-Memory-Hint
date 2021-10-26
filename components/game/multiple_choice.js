@@ -7,8 +7,7 @@ import Round from "./round"
 
 
 
-//make individual selected q and a, when user wanna go back or next, set to null or reset
-export default MultipleChoiceGame = ({ navigation, route }) => {
+const MultipleChoiceGame = ({ navigation, route }) => {
 
 
     const [QAs, setQAs] = useState([])
@@ -73,3 +72,5 @@ const styles = StyleSheet.create({
       marginTop: StatusBar.currentHeight || 0,
     }
   });
+
+  export default MultipleChoiceGame

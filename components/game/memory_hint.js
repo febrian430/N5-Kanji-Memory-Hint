@@ -11,14 +11,15 @@ const Option = ({value, onPress, backgroundColor, textColor}) => {
   )
 }
 
-const MemoryHint = () => {
+const MemoryHint = ({ route }) => {
 
   const [options, setOptions] = useState([])
   const [solved, setSolved] = useState([])
   const [selected, setSelected] = useState([]);
 
   useEffect(() => {
-    var source = kanji.kanji_collection
+    const selectedChapters = route.params.chapters
+    var source = kanji.kanji_collection.filter((kanji) => selectedChapters.includes(kanji.chapter))
 
     //make options datasource
     names = source.map((element) =>  { return { value: element.name, key: element.meaning }})
@@ -35,7 +36,6 @@ const MemoryHint = () => {
       setSelected([...selected, item])
     } else {
       if(selected[0].value === item.key) {
-        alert("righto!")
         setSolved([...solved, item, selected[0]])
       }
       setSelected([])

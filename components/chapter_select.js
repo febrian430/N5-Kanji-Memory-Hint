@@ -12,7 +12,7 @@ const Chapter = ({onPress, title, isSelected}) => {
     )
 }
 
-export default ChapterSelect = ({ navigation, route }) => {
+const ChapterSelect = ({ navigation, route }) => {
     const [multi, setMulti] = useState(false)
     const [triggerOnSelect, setTriggerOnSelect] = useState(false)
     const [selected, setSelected] = useState([])
@@ -94,8 +94,10 @@ const styles = StyleSheet.create({
         backgroundColor: "blue",
         color: "white"
     },
-    
+
     title: {
         fontSize: 32
     }
 })
+
+export default ChapterSelect

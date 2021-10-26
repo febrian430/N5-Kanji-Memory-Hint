@@ -35,6 +35,16 @@ const Home = ({ navigation }) => {
           buttonTitle: "Start multiple choice"
         })}
       />
+
+      <Button 
+        title="Mix and Match"
+        onPress= {() => navigation.navigate('Chapter Select', 
+        {
+          multi: true,
+          renderNext: "Mix-Match",
+          buttonTitle: "Start Mix and Match"
+        })}
+      />
        {/* <MemoryHint />
        <MultipleChoice />
 

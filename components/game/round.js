@@ -22,7 +22,7 @@ const Option = ({value, onPress, disabled, style }) => {
     )
 }
 
-export default Round = ({question, options, answer, onCorrect, onSelect}) => {
+const Round = ({question, options, answer, onCorrect, onSelect}) => {
 
     const [selected, setSelected] = useState(null)  
 
@@ -99,3 +99,5 @@ const styles = StyleSheet.create({
       fontSize: 32,
     }
 })
+
+export default Round

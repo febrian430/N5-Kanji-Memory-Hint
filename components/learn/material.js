@@ -11,7 +11,7 @@ const ChapterListOption = ({chapter, onPress}) => {
     )
 }
 
-export default Material = ({ navigation }) => {
+const Material = ({ navigation }) => {
     const [chapters, setChapters] = useState([])
     const [viewingChapter, setViewingChapter] = useState([])
     const [selChapter, setSelChapter] = useState(null)
@@ -63,3 +63,5 @@ export default Material = ({ navigation }) => {
         </View>
     )
 }
+
+export default Material

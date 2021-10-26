@@ -3,7 +3,7 @@ import { Button, Dimensions, StyleSheet, Text } from "react-native";
 import { HorizontalScroll, Full } from "../horizontal_scroll"
 
 
-export default Study = ({ navigation, route }) => {
+const Study = ({ navigation, route }) => {
     const kanjis = route.params.kanjis
     const current = route.params.current
     console.log("KANJI", kanjis, "CURRENT", current)
@@ -49,3 +49,4 @@ export default Study = ({ navigation, route }) => {
     )
 }
 
+export default Study
