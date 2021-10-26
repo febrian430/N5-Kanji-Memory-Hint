@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { FlatList, ScrollView, Text, View } from "react-native";
 import { TouchableOpacity } from "react-native-gesture-handler";
 import Kanji from "../../assets/data/kanji.json"
+import { Full, HorizontalScroll } from "../horizontal_scroll";
 
 const ChapterListOption = ({chapter, onPress}) => {
     return (
@@ -41,17 +42,19 @@ const Material = ({ navigation }) => {
     }
 
     return (
-        <View>
-            {chapters.map(chapter => {  
-                return <ChapterListOption 
-                    chapter={chapter} 
-                    onPress={() => setSelChapter(chapter)} 
-                />
+        <ScrollView>
+            <View>
+            {chapters.map((chapter, index) => {  
+                return (
+                    <ChapterListOption 
+                        key={index}
+                        chapter={chapter} 
+                        onPress={() => setSelChapter(chapter)} 
+                    />
+                    )
             })}
-
-            <ScrollView
-                horizontal
-            >
+            </View>
+            <View>
                 <FlatList
                     data={viewingChapter}
                     renderItem={renderItem}
@@ -59,8 +62,8 @@ const Material = ({ navigation }) => {
                     extraData={selChapter}
                 >
                 </FlatList>
-            </ScrollView>
-        </View>
+            </View>
+        </ScrollView>
     )
 }
 
