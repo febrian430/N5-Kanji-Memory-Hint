@@ -34,7 +34,7 @@ const Material = ({ navigation }) => {
                 { 
                     kanjis: viewingChapter,
                     current: index
-                })}>s
+                })}>
                 <Text>{item.name} ({item.pronounciation})</Text>
             </TouchableOpacity>
         )
