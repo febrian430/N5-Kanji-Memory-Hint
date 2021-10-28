@@ -5,11 +5,12 @@
             "chapter": 1,
             "kunyomi": "ひと-つ／ひと",
             "onyomi": "イチ",
-            "spelling": {
-                "atomic_form": "いち"
-            },
-            "meaning": "Satu",
             "examples": [
+                {
+                    "rune": "一",
+                    "spelling": "いち",
+                    "meaning": "Satu"
+                },
                 {   
                     "rune": "⋆一人",
                     "spelling": "ひと・り",
@@ -33,11 +34,12 @@
             "chapter": 1,
             "kunyomi": "ふた-つ／ふた",
             "onyomi": "ニ",
-            "spelling": {
-                "atomic_form": "に"
-            },
-            "meaning": "Dua",
             "examples": [
+                {
+                    "rune": "二",
+                    "spelling": "に",
+                    "meaning":"Dua"
+                },
                 {   
                     "rune": "二人",
                     "spelling": "ふた・り",
@@ -60,11 +62,12 @@
             "chapter": 1,
             "kunyomi": "みっ-つ",
             "onyomi": "サン",
-            "spelling": {
-                "atomic_form": "さん"
-            },
-            "meaning": "Tiga",
             "examples": [
+                {
+                    "rune": "三",
+                    "spelling": "さん",
+                    "meaning": "Tiga"
+                },
                 {   
                     "rune": "三人",
                     "spelling": "さん・にん",
@@ -87,11 +90,12 @@
             "chapter": 1,
             "kunyomi": "よっ-つ／よん／よ",
             "onyomi": "シ",
-            "spelling": {
-                "atomic_form": "よん"
-            },
-            "meaning": "Empat",
             "examples": [
+                {
+                    "rune": "四",
+                    "spelling": "よん",
+                    "meaning": "Empat"
+                },
                 {   
                     "rune": "四人",
                     "spelling": "よん・にん",
@@ -114,11 +118,12 @@
             "chapter": 1,
             "kunyomi": "いつ-つ／いつ",
             "onyomi": "ゴ",
-            "spelling": {
-                "atomic_form": "ご"
-            },
-            "meaning": "Lima",
             "examples": [
+                {
+                    "rune": "五",
+                    "spelling": "ご",
+                    "meaning": "Lima"
+                },
                 {   
                     "rune": "五人",
                     "spelling": "ご・にん",
@@ -141,11 +146,12 @@
             "chapter": 1,
             "kunyomi": "むっ-つ",
             "onyomi": "ロク",
-            "spelling": {
-                "atomic_form": "ろく"
-            },
-            "meaning": "Enam",
             "examples": [
+                {
+                    "rune": "六",
+                    "spelling": "ろく",
+                    "meaning": "Enam"
+                },
                 {   
                     "rune": "六人",
                     "spelling": "ろく・にん",
@@ -168,11 +174,12 @@
             "chapter": 1,
             "kunyomi": "なな-つ／なな",
             "onyomi": "シチ",
-            "spelling": {
-                "atomic_form": "なな"
-            },
-            "meaning": "Tujuh",
             "examples": [
+                {
+                    "rune": "七",
+                    "spelling": "なな",
+                    "meaning": "Tujuh"
+                },
                 {   
                     "rune": "七人",
                     "spelling": "なな・にん",
@@ -195,11 +202,12 @@
             "chapter": 1,
             "kunyomi": "やっ-つ",
             "onyomi": "ハチ",
-            "spelling": {
-                "atomic_form": "やっ・つ"
-            },
-            "meaning": "Delapan",
             "examples": [
+                {
+                    "rune": "八",
+                    "spelling": "やっ・つ",
+                    "meaning": "Delapan"
+                },
                 {   
                     "rune": "八人",
                     "spelling": "はち・にん",
@@ -222,11 +230,12 @@
             "chapter": 1,
             "kunyomi": "ここの-つ／ここの",
             "onyomi": "ク／キュウ",
-            "spelling": {
-                "atomic_form": "きゅう"
-            },
-            "meaning": "Sembilan",
             "examples": [
+                {
+                    "rune": "九",
+                    "spelling": "きゅう",
+                    "meaning":  "Sembilan"
+                },
                 {   
                     "rune": "九人",
                     "spelling": "きゅう・にん",
@@ -249,11 +258,12 @@
             "chapter": 1,
             "kunyomi": "とう",
             "onyomi": "ジュウ",
-            "spelling": {
-                "atomic_form": "じゅう"
-            },
-            "meaning": "Sepuluh",
             "examples": [
+                {
+                    "rune": "十",
+                    "spelling": "じゅう",
+                    "meaning": "Sepuluh"
+                },
                 {   
                     "rune": "十月",
                     "spelling": "じゅう・がつ",
@@ -276,11 +286,12 @@
             "chapter": 1,
             "kunyomi": "ー",
             "onyomi": "ヒャク／-ビャク／-ピャク",
-            "spelling": {
-                "atomic_form": "ひゃく"
-            },
-            "meaning": "100",
             "examples": [
+                {
+                    "rune": "百",
+                    "spelling": "ひゃく",
+                    "meaning":"100"
+                },
                 {   
                     "rune": "二百",
                     "spelling": "に・ひゃく",
@@ -303,11 +314,12 @@
             "chapter": 1,
             "kunyomi": "ち",
             "onyomi": "セン／-ゼン",
-            "spelling": {
-                "atomic_form": "えん"
-            },
-            "meaning": "1000 (satuan) (ribu)",
             "examples": [
+                {
+                    "rune": "千",
+                    "spelling": "えん",
+                    "meaning":  "1000 (satuan) (ribu)"
+                },
                 {   
                     "rune": "千円",
                     "spelling": "せん・えん",
@@ -325,11 +337,13 @@
             "chapter": 1,
             "kunyomi": "ー",
             "onyomi": "マン",
-            "spelling": {
-                "atomic_form": "まん"
-            },
-            "meaning": "10.000 (satuan) (puluh ribu)",
             "examples": [
+                {
+                    "rune": "万",
+                    "spelling": "まん",
+                    "meaning": "10.000 (satuan) (puluh ribu)"
+                },
+
                 {   
                     "rune": "一万円",
                     "spelling": "いち・まん・えん",
@@ -347,11 +361,12 @@
             "chapter": 1,
             "kunyomi": "とし",
             "onyomi": "ネン",
-            "spelling": {
-                "atomic_form": "とし"
-            },
-            "meaning": "Tahun",
             "examples": [
+                {
+                    "rune": "年",
+                    "spelling": "とし",
+                    "meaning": "Tahun"
+                },
                 {   
                     "rune": "来年",
                     "spelling": "らい・ねん",
@@ -369,11 +384,12 @@
             "chapter": 2,
             "kunyomi": "ひ／-び",
             "onyomi": "ニチ／ニ",
-            "spelling": {
-                "atomic_form": "ひ"
-            },
-            "meaning": "Matahari",
             "examples": [
+                {
+                    "rune": "日",
+                    "spelling": "ひ",
+                    "meaning": "Matahari"
+                },
                 {   
                     "rune": "三日",
                     "spelling": "みっ・か",
@@ -396,11 +412,12 @@
             "chapter": 2,
             "kunyomi": "つき",
             "onyomi": "ゲツ／ガツ",
-            "spelling": {
-                "atomic_form": "つき"
-            },
-            "meaning": "Bulan",
             "examples": [
+                {
+                    "rune": "月",
+                    "spelling": "つき",
+                    "meaning": "Bulan"
+                },
                 {   
                     "rune": "一月",
                     "spelling": "いち・がつ",
@@ -418,11 +435,12 @@
             "chapter": 2,
             "kunyomi": "き",
             "onyomi": "モク（ボク）",
-            "spelling": {
-                "atomic_form": "き"
-            },
-            "meaning": "Pohon",
             "examples": [
+                {
+                    "rune": "木",
+                    "spelling": "き",
+                    "meaning": "Pohon"
+                },
                 {   
                     "rune": "土木",
                     "spelling": "ど・ぼく",
@@ -440,11 +458,12 @@
             "chapter": 2,
             "kunyomi": "やま",
             "onyomi": "サン／-ザン",
-            "spelling": {
-                "atomic_form": "やま"
-            },
-            "meaning": "Gunung",
             "examples": [
+                {
+                    "rune": "山",
+                    "spelling": "やま",
+                    "meaning": "Gunung"
+                },
                 {   
                     "rune": "火山",
                     "spelling": "か・ざん",
@@ -457,11 +476,12 @@
             "chapter": 2,
             "kunyomi": "かわ／-がわ",
             "onyomi": "（セン）",
-            "spelling": {
-                "atomic_form": "かわ"
-            },
-            "meaning": "Sungai",
             "examples": [
+                {
+                    "rune": "川",
+                    "spelling": "かわ",
+                    "meaning": "Sungai"
+                },
                 {   
                     "rune": "小川",
                     "spelling": "お・がわ",
@@ -474,11 +494,12 @@
             "chapter": 2,
             "kunyomi": "た／-だ",
             "onyomi": "デン",
-            "spelling": {
-                "atomic_form": "た"
-            },
-            "meaning": "Sawah",
             "examples": [
+                {
+                    "rune": "田",
+                    "spelling": "た",
+                    "meaning": "Sawah"
+                },
                 {   
                     "rune": "水田",
                     "spelling": "すい・でん",
@@ -491,11 +512,12 @@
             "chapter": 2,
             "kunyomi": "ひと",
             "onyomi": "ジン／ニン",
-            "spelling": {
-                "atomic_form": "ひと"
-            },
-            "meaning": "Orang",
             "examples": [
+                {
+                    "rune": "人",
+                    "spelling": "ひと",
+                    "meaning": "Orang"
+                },
                 {   
                     "rune": "⋆一人",
                     "spelling": "ひと・り",
@@ -518,11 +540,12 @@
             "chapter": 2,
             "kunyomi": "くち／-ぐち",
             "onyomi": "コウ",
-            "spelling": {
-                "atomic_form": "くち"
-            },
-            "meaning": "Mulut",
             "examples": [
+                {
+                    "rune": "口",
+                    "spelling": "くち",
+                    "meaning": "Mulut"
+                },
                 {   
                     "rune": "入口",
                     "spelling": "いり・ぐち",
@@ -545,11 +568,12 @@
             "chapter": 2,
             "kunyomi": "くるま",
             "onyomi": "シャ",
-            "spelling": {
-                "atomic_form": "くるま"
-            },
-            "meaning": "Mobil",
             "examples": [
+                {
+                    "rune": "車",
+                    "spelling": "くるま",
+                    "meaning": "Mobil"
+                },
                 {   
                     "rune": "自動車",
                     "spelling": "じ・どう・しゃ",
@@ -572,11 +596,12 @@
             "chapter": 2,
             "kunyomi": "（かど）",
             "onyomi": "モン",
-            "spelling": {
-                "atomic_form": "もん"
-            },
-            "meaning": "Gerbang",
             "examples": [
+                {
+                    "rune": "門",
+                    "spelling": "もん",
+                    "meaning": "Gerbang"
+                },
                 {   
                     "rune": "専門",
                     "spelling": "せん・もん",
@@ -589,11 +614,12 @@
             "chapter": 3,
             "kunyomi": "ひ",
             "onyomi": "カ",
-            "spelling": {
-                "atomic_form": "ひ"
-            },
-            "meaning": "Api",
             "examples": [
+                {
+                    "rune": "火",
+                    "spelling": "ひ",
+                    "meaning": "Api"
+                },
                 {   
                     "rune": "火曜日",
                     "spelling": "か・よう・び",
@@ -616,11 +642,12 @@
             "chapter": 3,
             "kunyomi": "みず",
             "onyomi": "スイ",
-            "spelling": {
-                "atomic_form": "みず"
-            },
-            "meaning": "Air",
             "examples": [
+                {
+                    "rune": "水",
+                    "spelling": "みず",
+                    "meaning": "Air"
+                },
                 {   
                     "rune": "水曜日",
                     "spelling": "すい・よう・び",
@@ -643,11 +670,12 @@
             "chapter": 3,
             "kunyomi": "かね",
             "onyomi": "キン",
-            "spelling": {
-                "atomic_form": "きん"
-            },
-            "meaning": "Emas",
             "examples": [
+                {
+                    "rune": "金",
+                    "spelling": "きん",
+                    "meaning": "Emas"
+                },
                 {   
                     "rune": "お金",
                     "spelling": "お・かね",
@@ -665,11 +693,12 @@
             "chapter": 3,
             "kunyomi": "つち",
             "onyomi": "ド",
-            "spelling": {
-                "atomic_form": "つち"
-            },
-            "meaning": "Tanah",
             "examples": [
+                {
+                    "rune": "土",
+                    "spelling": "つち",
+                    "meaning": "Tanah"
+                },
                 {   
                     "rune": "土曜日",
                     "spelling": "ど・よう・び",
@@ -683,14 +712,33 @@
             ]
         },
         {
+            "rune": "女",
+            "chapter": 3,
+            "kunyomi": "おんな",
+            "onyomi": "ジョ",
+            "examples": [
+                {
+                    "rune": "女",
+                    "spelling": "おんな",
+                    "meaning": "Perempuan"
+                },
+                {   
+                    "rune": "女の人",
+                    "spelling": "おんな・の・ひと",
+                    "meaning": "Orang perempuan"	
+                },
+                {   
+                    "rune": "彼女",
+                    "spelling": "かの・じょ",
+                    "meaning": "Dia (perempuan)"	
+                }
+            ]
+        },
+        {
             "rune": "子",
             "chapter": 3,
             "kunyomi": "こ",
             "onyomi": "シ",
-            "spelling": {
-                "atomic_form": "こ"
-            },
-            "meaning": "",
             "examples": [
                 {   
                     "rune": "子ども",
@@ -715,36 +763,10 @@
             ]
         },
         {
-            "rune": "女",
-            "chapter": 3,
-            "kunyomi": "おんな",
-            "onyomi": "ジョ",
-            "spelling": {
-                "atomic_form": "おんな"
-            },
-            "meaning": "Perempuan",
-            "examples": [
-                {   
-                    "rune": "女の人",
-                    "spelling": "おんな・の・ひと",
-                    "meaning": "Orang perempuan"	
-                },
-                {   
-                    "rune": "彼女",
-                    "spelling": "かの・じょ",
-                    "meaning": "Dia (perempuan)"	
-                }
-            ]
-        },
-        {
             "rune": "学",
             "chapter": 3,
             "kunyomi": "まな-ぶ",
             "onyomi": "ガク／ガッ-",
-            "spelling": {
-                "atomic_form": ""
-            },
-            "meaning": "",
             "examples": [
                 {   
                     "rune": "学生",
@@ -768,10 +790,6 @@
             "chapter": 3,
             "kunyomi": "い-きる／う-まれる",
             "onyomi": "セイ",
-            "spelling": {
-                "atomic_form": ""
-            },
-            "meaning": "",
             "examples": [
                 {   
                     "rune": "生きる",
@@ -795,10 +813,6 @@
             "chapter": 3,
             "kunyomi": "さき",
             "onyomi": "セン",
-            "spelling": {
-                "atomic_form": ""
-            },
-            "meaning": "",
             "examples": [
                 {   
                     "rune": "先",
@@ -827,10 +841,6 @@
             "chapter": 3,
             "kunyomi": "わたし／わたくし",
             "onyomi": "し",
-            "spelling": {
-                "atomic_form": ""
-            },
-            "meaning": "",
             "examples": [
                 {   
                     "rune": "私",
@@ -849,10 +859,6 @@
             "chapter": 4,
             "kunyomi": "うえ／あ-がる／あ-げう",
             "onyomi": "ジョウ",
-            "spelling": {
-                "atomic_form": ""
-            },
-            "meaning": "",
             "examples": [
                 {   
                     "rune": "上",
@@ -876,10 +882,6 @@
             "chapter": 4,
             "kunyomi": "した／さ-がる／さ-げる",
             "onyomi": "カ／ゲ",
-            "spelling": {
-                "atomic_form": ""
-            },
-            "meaning": "",
             "examples": [
                 {   
                     "rune": "下",
@@ -903,10 +905,6 @@
             "chapter": 4,
             "kunyomi": "なか",
             "onyomi": "チュウ／-ジュウ",
-            "spelling": {
-                "atomic_form": ""
-            },
-            "meaning": "",
             "examples": [
                 {   
                     "rune": "中",
@@ -930,10 +928,6 @@
             "chapter": 4,
             "kunyomi": "おお-きい",
             "onyomi": "ダイ／タイ",
-            "spelling": {
-                "atomic_form": ""
-            },
-            "meaning": "",
             "examples": [
                 {   
                     "rune": "大きい",
@@ -957,10 +951,6 @@
             "chapter": 4,
             "kunyomi": "ちい-さい／こ／お",
             "onyomi": "ジョウ",
-            "spelling": {
-                "atomic_form": ""
-            },
-            "meaning": "",
             "examples": [
                 {   
                     "rune": "小さい",
@@ -984,10 +974,6 @@
             "chapter": 4,
             "kunyomi": "もと",
             "onyomi": "ホン",
-            "spelling": {
-                "atomic_form": ""
-            },
-            "meaning": "",
             "examples": [
                 {   
                     "rune": "本",
@@ -1016,10 +1002,6 @@
             "chapter": 4,
             "kunyomi": "（なか-ば）",
             "onyomi": "ハン",
-            "spelling": {
-                "atomic_form": ""
-            },
-            "meaning": "",
             "examples": [
                 {   
                     "rune": "半分",
@@ -1048,10 +1030,6 @@
             "chapter": 4,
             "kunyomi": "わ-かる／わ-ける",
             "onyomi": "ブン／フン／-プン",
-            "spelling": {
-                "atomic_form": ""
-            },
-            "meaning": "",
             "examples": [
                 {   
                     "rune": "分ける",
@@ -1080,10 +1058,6 @@
             "chapter": 4,
             "kunyomi": "ちから",
             "onyomi": "リョク／リキ",
-            "spelling": {
-                "atomic_form": ""
-            },
-            "meaning": "",
             "examples": [
                 {   
                     "rune": "力",
@@ -1107,10 +1081,6 @@
             "chapter": 4,
             "kunyomi": "なに／なん",
             "onyomi": "ー",
-            "spelling": {
-                "atomic_form": ""
-            },
-            "meaning": "",
             "examples": [
                 {   
                     "rune": "何",
@@ -1139,10 +1109,6 @@
             "chapter": 5,
             "kunyomi": "あか-るい",
             "onyomi": "メイ",
-            "spelling": {
-                "atomic_form": ""
-            },
-            "meaning": "",
             "examples": [
                 {   
                     "rune": "明るい",
@@ -1166,10 +1132,6 @@
             "chapter": 5,
             "kunyomi": "やす-む",
             "onyomi": "キュウ",
-            "spelling": {
-                "atomic_form": ""
-            },
-            "meaning": "",
             "examples": [
                 {   
                     "rune": "休む",
@@ -1188,10 +1150,6 @@
             "chapter": 5,
             "kunyomi": "からだ",
             "onyomi": "タイ",
-            "spelling": {
-                "atomic_form": ""
-            },
-            "meaning": "",
             "examples": [
                 {   
                     "rune": "体",
@@ -1215,10 +1173,6 @@
             "chapter": 5,
             "kunyomi": "す-きな",
             "onyomi": "ー",
-            "spelling": {
-                "atomic_form": ""
-            },
-            "meaning": "",
             "examples": [
                 {   
                     "rune": "好きな",
@@ -1232,10 +1186,6 @@
             "chapter": 5,
             "kunyomi": "はやし",
             "onyomi": "リン",
-            "spelling": {
-                "atomic_form": ""
-            },
-            "meaning": "",
             "examples": [
                 {   
                     "rune": "林",
@@ -1254,10 +1204,6 @@
             "chapter": 5,
             "kunyomi": "もり",
             "onyomi": "シン",
-            "spelling": {
-                "atomic_form": ""
-            },
-            "meaning": "",
             "examples": [
                 {   
                     "rune": "森",
@@ -1276,10 +1222,6 @@
             "chapter": 5,
             "kunyomi": "おとこ",
             "onyomi": "ダン／ナン",
-            "spelling": {
-                "atomic_form": ""
-            },
-            "meaning": "",
             "examples": [
                 {   
                     "rune": "男",
@@ -1308,10 +1250,6 @@
             "chapter": 5,
             "kunyomi": "あいだ／ま",
             "onyomi": "カン",
-            "spelling": {
-                "atomic_form": ""
-            },
-            "meaning": "",
             "examples": [
                 {   
                     "rune": "   ",
@@ -1340,10 +1278,6 @@
             "chapter": 5,
             "kunyomi": "はたけ／はた",
             "onyomi": "ー",
-            "spelling": {
-                "atomic_form": ""
-            },
-            "meaning": "",
             "examples": [
                 {   
                     "rune": "畑",
@@ -1367,10 +1301,6 @@
             "chapter": 5,
             "kunyomi": "いわ",
             "onyomi": "ガン",
-            "spelling": {
-                "atomic_form": ""
-            },
-            "meaning": "",
             "examples": [
                 {   
                     "rune": "岩",
@@ -1394,10 +1324,6 @@
             "chapter": 6,
             "kunyomi": "め",
             "onyomi": "モク",
-            "spelling": {
-                "atomic_form": ""
-            },
-            "meaning": "",
             "examples": [
                 {   
                     "rune": "目",
@@ -1416,10 +1342,6 @@
             "chapter": 6,
             "kunyomi": "みみ",
             "onyomi": "ジ",
-            "spelling": {
-                "atomic_form": ""
-            },
-            "meaning": "",
             "examples": [
                 {   
                     "rune": "耳",
@@ -1433,10 +1355,6 @@
             "chapter": 6,
             "kunyomi": "て",
             "onyomi": "シュ",
-            "spelling": {
-                "atomic_form": ""
-            },
-            "meaning": "",
             "examples": [
                 {   
                     "rune": "手",
@@ -1465,10 +1383,6 @@
             "chapter": 6,
             "kunyomi": "あし",
             "onyomi": "ソク",
-            "spelling": {
-                "atomic_form": ""
-            },
-            "meaning": "",
             "examples": [
                 {   
                     "rune": "足",
@@ -1487,10 +1401,6 @@
             "chapter": 6,
             "kunyomi": "あめ",
             "onyomi": "ウ",
-            "spelling": {
-                "atomic_form": ""
-            },
-            "meaning": "",
             "examples": [
                 {   
                     "rune": "雨",
@@ -1514,10 +1424,6 @@
             "chapter": 6,
             "kunyomi": "たけ",
             "onyomi": "（チク）",
-            "spelling": {
-                "atomic_form": ""
-            },
-            "meaning": "",
             "examples": [
                 {   
                     "rune": "竹",
@@ -1536,10 +1442,6 @@
             "chapter": 6,
             "kunyomi": "こめ",
             "onyomi": "マイ／ベイ",
-            "spelling": {
-                "atomic_form": ""
-            },
-            "meaning": "",
             "examples": [
                 {   
                     "rune": "米",
@@ -1568,10 +1470,6 @@
             "chapter": 6,
             "kunyomi": "かい",
             "onyomi": "ー",
-            "spelling": {
-                "atomic_form": ""
-            },
-            "meaning": "",
             "examples": [
                 {   
                     "rune": "貝",
@@ -1585,10 +1483,6 @@
             "chapter": 6,
             "kunyomi": "いし",
             "onyomi": "セキ",
-            "spelling": {
-                "atomic_form": ""
-            },
-            "meaning": "",
             "examples": [
                 {   
                     "rune": "石",
@@ -1612,10 +1506,6 @@
             "chapter": 6,
             "kunyomi": "いと",
             "onyomi": "（シ）",
-            "spelling": {
-                "atomic_form": ""
-            },
-            "meaning": "",
             "examples": [
                 {   
                     "rune": "糸",
@@ -1634,10 +1524,6 @@
             "chapter": 7,
             "kunyomi": "はな",
             "onyomi": "カ",
-            "spelling": {
-                "atomic_form": ""
-            },
-            "meaning": "",
             "examples": [
                 {   
                     "rune": "花",
@@ -1661,10 +1547,6 @@
             "chapter": 7,
             "kunyomi": "ー",
             "onyomi": "チャ／サ",
-            "spelling": {
-                "atomic_form": ""
-            },
-            "meaning": "",
             "examples": [
                 {   
                     "rune": "お茶",
@@ -1688,10 +1570,6 @@
             "chapter": 7,
             "kunyomi": "ー",
             "onyomi": "ニク",
-            "spelling": {
-                "atomic_form": ""
-            },
-            "meaning": "",
             "examples": [
                 {   
                     "rune": "肉",
@@ -1715,10 +1593,6 @@
             "chapter": 7,
             "kunyomi": "あか-い",
             "onyomi": "セキ",
-            "spelling": {
-                "atomic_form": ""
-            },
-            "meaning": "",
             "examples": [
                 {   
                     "rune": "赤い",
@@ -1742,10 +1616,6 @@
             "chapter": 7,
             "kunyomi": "しろ-い／しら",
             "onyomi": "ハク／パク",
-            "spelling": {
-                "atomic_form": ""
-            },
-            "meaning": "",
             "examples": [
                 {   
                     "rune": "白い",
@@ -1764,10 +1634,6 @@
             "chapter": 7,
             "kunyomi": "もの",
             "onyomi": "ブツ／モツ",
-            "spelling": {
-                "atomic_form": ""
-            },
-            "meaning": "",
             "examples": [
                 {   
                     "rune": "物",
@@ -1796,10 +1662,6 @@
             "chapter": 7,
             "kunyomi": "うし",
             "onyomi": "ギュウ",
-            "spelling": {
-                "atomic_form": ""
-            },
-            "meaning": "",
             "examples": [
                 {   
                     "rune": "牛",
@@ -1828,10 +1690,6 @@
             "chapter": 7,
             "kunyomi": "うま",
             "onyomi": "バ",
-            "spelling": {
-                "atomic_form": ""
-            },
-            "meaning": "",
             "examples": [
                 {   
                     "rune": "馬",
@@ -1855,10 +1713,6 @@
             "chapter": 7,
             "kunyomi": "とり",
             "onyomi": "チョウ",
-            "spelling": {
-                "atomic_form": ""
-            },
-            "meaning": "",
             "examples": [
                 {   
                     "rune": "鳥",
@@ -1882,10 +1736,6 @@
             "chapter": 7,
             "kunyomi": "さかな",
             "onyomi": "ギョ",
-            "spelling": {
-                "atomic_form": ""
-            },
-            "meaning": "",
             "examples": [
                 {   
                     "rune": "魚",
@@ -1914,10 +1764,6 @@
             "chapter": 8,
             "kunyomi": "あたら-しい",
             "onyomi": "シン",
-            "spelling": {
-                "atomic_form": ""
-            },
-            "meaning": "",
             "examples": [
                 {   
                     "rune": "新しい",
@@ -1946,10 +1792,6 @@
             "chapter": 8,
             "kunyomi": "ふる-い",
             "onyomi": "こ",
-            "spelling": {
-                "atomic_form": ""
-            },
-            "meaning": "",
             "examples": [
                 {   
                     "rune": "古い",
@@ -1973,10 +1815,6 @@
             "chapter": 8,
             "kunyomi": "なが-い",
             "onyomi": "チョウ",
-            "spelling": {
-                "atomic_form": ""
-            },
-            "meaning": "",
             "examples": [
                 {   
                     "rune": "長い",
@@ -1995,10 +1833,6 @@
             "chapter": 8,
             "kunyomi": "みじか-い",
             "onyomi": "タン",
-            "spelling": {
-                "atomic_form": ""
-            },
-            "meaning": "",
             "examples": [
                 {   
                     "rune": "短い",
@@ -2017,10 +1851,6 @@
             "chapter": 8,
             "kunyomi": "たか-い",
             "onyomi": "コウ",
-            "spelling": {
-                "atomic_form": ""
-            },
-            "meaning": "",
             "examples": [
                 {   
                     "rune": "高い",
@@ -2044,10 +1874,6 @@
             "chapter": 8,
             "kunyomi": "やす-い",
             "onyomi": "アン",
-            "spelling": {
-                "atomic_form": ""
-            },
-            "meaning": "",
             "examples": [
                 {   
                     "rune": "安い",
@@ -2071,10 +1897,6 @@
             "chapter": 8,
             "kunyomi": "ひくい-い",
             "onyomi": "テイ",
-            "spelling": {
-                "atomic_form": ""
-            },
-            "meaning": "",
             "examples": [
                 {   
                     "rune": "低い",
@@ -2093,10 +1915,6 @@
             "chapter": 8,
             "kunyomi": "くらい-い",
             "onyomi": "アン",
-            "spelling": {
-                "atomic_form": ""
-            },
-            "meaning": "",
             "examples": [
                 {   
                     "rune": "暗い",
@@ -2115,10 +1933,6 @@
             "chapter": 8,
             "kunyomi": "おお-い",
             "onyomi": "タ",
-            "spelling": {
-                "atomic_form": ""
-            },
-            "meaning": "",
             "examples": [
                 {   
                     "rune": "多い",
@@ -2137,10 +1951,6 @@
             "chapter": 8,
             "kunyomi": "すく-ない／すこ-し",
             "onyomi": "ショウ",
-            "spelling": {
-                "atomic_form": ""
-            },
-            "meaning": "",
             "examples": [
                 {   
                     "rune": "少し",
@@ -2161,6 +1971,1009 @@
                     "rune": "少女",
                     "spelling": "しょう・じょ",
                     "meaning": "Pemudi"	
+                }
+            ]
+        },
+        {
+            "rune": "行",
+            "chapter": 9,
+            "kunyomi": "い-く／おこな-う",
+            "onyomi": "コウ／ギョウ",
+            "examples": [
+                {   
+                    "rune": "行く",
+                    "spelling": "あたら・しい",
+                    "meaning": "Pergi"	
+                },
+                {   
+                    "rune": "旅行する",
+                    "spelling": "りょ・こう・する",
+                    "meaning": "Travelling / bepergian"	
+                }
+            ]
+        },
+        {
+            "rune": "来",
+            "chapter": 9,
+            "kunyomi": "く-る／き-ます／こ-ない",
+            "onyomi": "ライ ",
+            "examples": [
+                {   
+                    "rune": "来る",
+                    "spelling": "く・る",
+                    "meaning": "Datang"	
+                },
+                {   
+                    "rune": "来月",
+                    "spelling": "らい・げつ",
+                    "meaning": "Bulan depan"	
+                },
+                {   
+                    "rune": "来年",
+                    "spelling": "らい・ねん",
+                    "meaning": "Tahun depan"	
+                }
+            ]
+        },
+        {
+            "rune": "食",
+            "chapter": 9,
+            "kunyomi": "たべ-る",
+            "onyomi": "ショク   ",
+            "examples": [
+                {   
+                    "rune": "食べる",
+                    "spelling": "た・べる",
+                    "meaning": "Makan"	
+                },
+                {   
+                    "rune": "食べ物",
+                    "spelling": "た・べ・もの",
+                    "meaning": "Makanan ( food )"	
+                },
+                {   
+                    "rune": "食事",
+                    "spelling": "しょく・じ",
+                    "meaning": "Makanan ( meal )"	
+                }
+            ]
+        },
+        {
+            "rune": "飲",
+            "chapter": 9,
+            "kunyomi": "の-む",
+            "onyomi": "イン ",
+            "examples": [
+                {   
+                    "rune": "飲む",
+                    "spelling": "の・む",
+                    "meaning": "Minum"	
+                },
+                {   
+                    "rune": "飲み物",
+                    "spelling": "の・み・もの",
+                    "meaning": "Minuman"	
+                }
+            ]
+        },
+        {
+            "rune": "見",
+            "chapter": 9,
+            "kunyomi": "み-る／み-せる／み-える",
+            "onyomi": "ケン ",
+            "examples": [
+                {   
+                    "rune": "見る",
+                    "spelling": "み・る",
+                    "meaning": "Lihat/Melihat"	
+                },
+                {   
+                    "rune": "見せる",
+                    "spelling": "み・せる",
+                    "meaning": "Memperlihatkan"	
+                },
+                {   
+                    "rune": "意見",
+                    "spelling": "い・けん",
+                    "meaning": "Pendapat"	
+                },
+                {   
+                    "rune": "見物する",
+                    "spelling": "けん・ぶつ・する",
+                    "meaning": "Melihat-lihat ( to go sightseeing )"	
+                }
+            ]
+        },
+        {
+            "rune": "聞",
+            "chapter": 9,
+            "kunyomi": "き-く／き-こえる",
+            "onyomi": "ブン ",
+            "examples": [
+                {   
+                    "rune": "聞く",
+                    "spelling": "き・く",
+                    "meaning": "Dengar/Mendengar"	
+                },
+                {   
+                    "rune": "聞こえる",
+                    "spelling": "き・こえる",
+                    "meaning": "Terdengar"	
+                },
+                {   
+                    "rune": "新聞",
+                    "spelling": "しん・ぶん",
+                    "meaning": "Koran"	
+                }
+            ]
+        },
+        {
+            "rune": "読",
+            "chapter": 9,
+            "kunyomi": "よ-む",
+            "onyomi": "ドク ",
+            "examples": [
+                {   
+                    "rune": "読む",
+                    "spelling": "よ・む",
+                    "meaning": "Baca/Membaca"	
+                },
+                {   
+                    "rune": "読書",
+                    "spelling": "どく・しょ",
+                    "meaning": "Membaca bacaan ( reading books)"	
+                },
+                {   
+                    "rune": "読者",
+                    "spelling": "どく・しゃ",
+                    "meaning": "Pembaca"	
+                }
+            ]
+        },
+        {
+            "rune": "書",
+            "chapter": 9,
+            "kunyomi": "か-く",
+            "onyomi": "ショ ",
+            "examples": [
+                {   
+                    "rune": "書く",
+                    "spelling": "か・く",
+                    "meaning": "Tulis/Menulis"	
+                },
+                {   
+                    "rune": "下書き",
+                    "spelling": "した・が・き",
+                    "meaning": "Draft"	
+                },
+                {   
+                    "rune": "書道",
+                    "spelling": "しょ・どう",
+                    "meaning": "Kaligrafi"	
+                }
+            ]
+        },
+        {
+            "rune": "話",
+            "chapter": 9,
+            "kunyomi": "はな-す／はなし",
+            "onyomi": "ワ   ",
+            "examples": [
+                {   
+                    "rune": "話す",
+                    "spelling": "はな・す",
+                    "meaning": "Berbicara"	
+                },
+                {   
+                    "rune": "会話",
+                    "spelling": "かい・わ",
+                    "meaning": "Percakapan"	
+                },
+                {   
+                    "rune": "電話",
+                    "spelling": "でん・わ",
+                    "meaning": "Telepon"	
+                }
+            ]
+        },
+        {
+            "rune": "買",
+            "chapter": 9,
+            "kunyomi": "か-う",
+            "onyomi": "ー   ",
+            "examples": [
+                {   
+                    "rune": "買う",
+                    "spelling": "か・う",
+                    "meaning": "Beli/Membeli"	
+                },
+                {   
+                    "rune": "買い物",
+                    "spelling": "か・い・もの",
+                    "meaning": "Belanja/Belanjaan"	
+                }
+            ]
+        },
+        {
+            "rune": "帰",
+            "chapter": 9,
+            "kunyomi": "かえ-る／かえ-す",
+            "onyomi": "キ   ",
+            "examples": [
+                {   
+                    "rune": "帰る",
+                    "spelling": "かえ・る",
+                    "meaning": "Pulang (ke rumah)"	
+                },
+                {   
+                    "rune": "帰国する",
+                    "spelling": "き・こく・する",
+                    "meaning": "Pulang ke negara asal"	
+                }
+            ]
+        },
+        {
+            "rune": "教",
+            "chapter": 9,
+            "kunyomi": "おし-える",
+            "onyomi": "キョウ",
+            "examples": [
+                {   
+                    "rune": "教える",
+                    "spelling": "おし・える",
+                    "meaning": "Mengajar"	
+                },
+                {   
+                    "rune": "教室",
+                    "spelling": "きょう・しつ",
+                    "meaning": "Ruang kelas ( Classroom )"	
+                },
+                {   
+                    "rune": "教会",
+                    "spelling": "きょう・かい",
+                    "meaning": "Gereja"	
+                }
+            ]
+        },
+        {
+            "rune": "朝",
+            "chapter": 10,
+            "kunyomi": "あさ",
+            "onyomi": "チョウ",
+            "examples": [
+                {   
+                    "rune": "朝",
+                    "spelling": "あさ",
+                    "meaning": "Pagi"	
+                },
+                {   
+                    "rune": "朝食",
+                    "spelling": "ちょう・しょく",
+                    "meaning": "Sarapan"	
+                },
+                {   
+                    "rune": "毎朝",
+                    "spelling": "まい・あさ",
+                    "meaning": "Setiap pagi"	
+                }
+            ]
+        },
+        {
+            "rune": "昼",
+            "chapter": 10,
+            "kunyomi": "ひる",
+            "onyomi": "チュウ",
+            "examples": [
+                {   
+                    "rune": "昼",
+                    "spelling": "ひる",
+                    "meaning": "Siang"	
+                },
+                {   
+                    "rune": "昼休み",
+                    "spelling": "ひる・やす・み",
+                    "meaning": "Istirahat siang ( lunch break )"	
+                },
+                {   
+                    "rune": "昼寝",
+                    "spelling": "ひる・ね",
+                    "meaning": "Tidur siang"	
+                },
+                {   
+                    "rune": "昼食",
+                    "spelling": "ちゅう・しょく",
+                    "meaning": "Makan siang"	
+                }
+            ]
+        },
+        {
+            "rune": "夜",
+            "chapter": 10,
+            "kunyomi": "よる／よ",
+            "onyomi": "ヤ",
+            "examples": [
+                {   
+                    "rune": "夜",
+                    "spelling": "よる",
+                    "meaning": "Malam"	
+                },
+                {   
+                    "rune": "夜中",
+                    "spelling": "よ・なか",
+                    "meaning": "Tengah malam"	
+                },
+                {   
+                    "rune": "   ",
+                    "spelling": "や・しょく",
+                    "meaning": "Makan malam (late-night snack)"	
+                }
+            ]
+        },
+        {
+            "rune": "晩",
+            "chapter": 10,
+            "kunyomi": "ー",
+            "onyomi": "バン",
+            "examples": [
+                {   
+                    "rune": "晩",
+                    "spelling": "ばん",
+                    "meaning": "Malam"	
+                },
+                {   
+                    "rune": "晩御飯",
+                    "spelling": "ばん・ご・はん",
+                    "meaning": "Makan malam ( Supper )"	
+                },
+                {   
+                    "rune": "今晩",
+                    "spelling": "こん・ばん",
+                    "meaning": "Malam ini"	
+                },
+                {   
+                    "rune": "毎晩",
+                    "spelling": "まい・ばん",
+                    "meaning": "Setiap malam"	
+                }
+            ]
+        },
+        {
+            "rune": "今",
+            "chapter": 10,
+            "kunyomi": "いま",
+            "onyomi": "コン",
+            "examples": [
+                {   
+                    "rune": "今",
+                    "spelling": "いま",
+                    "meaning": "Sekarang"	
+                },
+                {   
+                    "rune": "⋆今日",
+                    "spelling": "きょう",
+                    "meaning": "Hari ini"	
+                },
+                {   
+                    "rune": "今週",
+                    "spelling": "こん・しゅう",
+                    "meaning": "Minggu ini"	
+                },
+                {   
+                    "rune": "今月",
+                    "spelling": "こん・げつ",
+                    "meaning": "Bulan ini"	
+                }
+            ]
+        },
+        {
+            "rune": "方",
+            "chapter": 10,
+            "kunyomi": "かた",
+            "onyomi": "ホウ",
+            "examples": [
+                {   
+                    "rune": "方",
+                    "spelling": "かた",
+                    "meaning": "Cara (direction, ways)"	
+                },
+                {   
+                    "rune": "書き方",
+                    "spelling": "か・き・かた",
+                    "meaning": "Cara menulis"	
+                },
+                {   
+                    "rune": "方法",
+                    "spelling": "ほう・ほう",
+                    "meaning": "Metode"	
+                }
+            ]
+        },
+        {
+            "rune": "午",
+            "chapter": 10,
+            "kunyomi": "ー",
+            "onyomi": "ゴ",
+            "examples": [
+                {   
+                    "rune": "午前",
+                    "spelling": "ご・ぜん",
+                    "meaning": "Pagi ( a.m.)"	
+                },
+                {   
+                    "rune": "午後",
+                    "spelling": "ご・ご",
+                    "meaning": "Siang-malam ( p.m. )"	
+                }
+            ]
+        },
+        {
+            "rune": "前",
+            "chapter": 10,
+            "kunyomi": "まえ",
+            "onyomi": "ゼン",
+            "examples": [
+                {   
+                    "rune": "前",
+                    "spelling": "まえ",
+                    "meaning": "Depan"	
+                },
+                {   
+                    "rune": "～年前",
+                    "spelling": "～ねん・まえ",
+                    "meaning": "… Tahun yang lalu"	
+                },
+                {   
+                    "rune": "午前",
+                    "spelling": "ご・ぜん",
+                    "meaning": "Pagi ( a.m. )"	
+                }
+            ]
+        },
+        {
+            "rune": "後",
+            "chapter": 10,
+            "kunyomi": "あと／うし-ろ",
+            "onyomi": "ご",
+            "examples": [
+                {   
+                    "rune": "後ろ",
+                    "spelling": "うし・ろ",
+                    "meaning": "Belakang"	
+                },
+                {   
+                    "rune": "後",
+                    "spelling": "あと",
+                    "meaning": "Setelah(nya)"	
+                },
+                {   
+                    "rune": "午後",
+                    "spelling": "ご・ご",
+                    "meaning": "Siang-malam ( p.m. )"	
+                }
+            ]
+        },
+        {
+            "rune": "毎",
+            "chapter": 10,
+            "kunyomi": "ー",
+            "onyomi": "マイ",
+            "examples": [
+                {   
+                    "rune": "毎日",
+                    "spelling": "まい・にち",
+                    "meaning": "Setiap hari"	
+                },
+                {   
+                    "rune": "毎週",
+                    "spelling": "まい・しゅう",
+                    "meaning": "Setiap minggu"	
+                },
+                {   
+                    "rune": "毎月",
+                    "spelling": "まい・つき／げつ",
+                    "meaning": "Setiap bulan"	
+                },
+                {   
+                    "rune": "毎年",
+                    "spelling": "まい・とし／ねん",
+                    "meaning": "Setiap tahun"	
+                }
+            ]
+        },
+        {
+            "rune": "週",
+            "chapter": 10,
+            "kunyomi": "ー",
+            "onyomi": "シユウ",
+            "examples": [
+                {   
+                    "rune": "来週",
+                    "spelling": "らい・しゅう",
+                    "meaning": "Minggu depan"	
+                },
+                {   
+                    "rune": "先週",
+                    "spelling": "せん・しゅう",
+                    "meaning": "Minggu lalu"	
+                },
+                {   
+                    "rune": "週末",
+                    "spelling": "しゅう・まつ",
+                    "meaning": "Akhir pekan ( weekend )"	
+                },
+                {   
+                    "rune": "一週間",
+                    "spelling": "いっ。しゅう・かん",
+                    "meaning": "1 Minggu"	
+                }
+            ]
+        },
+        {
+            "rune": "曜",
+            "chapter": 10,
+            "kunyomi": "ー",
+            "onyomi": "ヨウ",
+            "examples": [
+                {   
+                    "rune": "月曜日",
+                    "spelling": "げつ・よう・び",
+                    "meaning": "Senin"	
+                },
+                {   
+                    "rune": "火曜日",
+                    "spelling": "か・よう・び",
+                    "meaning": "Selasa"	
+                },
+                {   
+                    "rune": "水曜日",
+                    "spelling": "すい・よう・び",
+                    "meaning": "Rabu"	
+                },
+                {   
+                    "rune": "木曜日",
+                    "spelling": "もく・よう・び",
+                    "meaning": "Kamis"	
+                }
+            ]
+        },
+        {
+            "rune": "作",
+            "chapter": 11,
+            "kunyomi": "つく-る",
+            "onyomi": "サク／サ",
+            "examples": [
+                {   
+                    "rune": "作る",
+                    "spelling": "つく・る",
+                    "meaning": "Membuat"	
+                },
+                {   
+                    "rune": "作文",
+                    "spelling": "さく・ぶん",
+                    "meaning": "Komposisi ( karangan cerita )"	
+                },
+                {   
+                    "rune": "動作",
+                    "spelling": "どう・さ",
+                    "meaning": "Gerakan"	
+                }
+            ]
+        },
+        {
+            "rune": "泳",
+            "chapter": 11,
+            "kunyomi": "およ-ぐ",
+            "onyomi": "エイ",
+            "examples": [
+                {   
+                    "rune": "泳ぐ",
+                    "spelling": "およ・ぐ",
+                    "meaning": "Berenang"	
+                }
+            ]
+        },
+        {
+            "rune": "油",
+            "chapter": 11,
+            "kunyomi": "あぶら",
+            "onyomi": "ユ",
+            "examples": [
+                {   
+                    "rune": "油",
+                    "spelling": "あぶら",
+                    "meaning": "Minyak"	
+                },
+                {   
+                    "rune": "油絵",
+                    "spelling": "あぶら・え",
+                    "meaning": "Cat minyak"	
+                },
+                {   
+                    "rune": "石油",
+                    "spelling": "せき・ゆ",
+                    "meaning": "Minyak bumi"	
+                },
+                {   
+                    "rune": "油田",
+                    "spelling": "ゆ・でん",
+                    "meaning": "Ladang minyak"	
+                }
+            ]
+        },
+        {
+            "rune": "海",
+            "chapter": 11,
+            "kunyomi": "うみ",
+            "onyomi": "カイ",
+            "examples": [
+                {   
+                    "rune": "海",
+                    "spelling": "うみ",
+                    "meaning": "Laut"	
+                },
+                {   
+                    "rune": "海外",
+                    "spelling": "かい・がい",
+                    "meaning": "Luar negeri ( overseas )"	
+                },
+                {   
+                    "rune": "海水",
+                    "spelling": "かい・すい",
+                    "meaning": "Air laut"	
+                }
+            ]
+        },
+        {
+            "rune": "酒",
+            "chapter": 11,
+            "kunyomi": "さけ／さか",
+            "onyomi": "シュ",
+            "examples": [
+                {   
+                    "rune": "酒",
+                    "spelling": "さけ",
+                    "meaning": "Sake ( alkohol ) "	
+                },
+                {   
+                    "rune": "酒屋",
+                    "spelling": "さか・や",
+                    "meaning": "Toko minuman keras (liquor shop)"	
+                },
+                {   
+                    "rune": "日本酒",
+                    "spelling": "に・ほん・しゅ",
+                    "meaning": "Sake/minuman keras Jepang"	
+                },
+                {   
+                    "rune": "洋酒",
+                    "spelling": "よう・しゅ",
+                    "meaning": "Minuman keras barat"	
+                }
+            ]
+        },
+        {
+            "rune": "待",
+            "chapter": 11,
+            "kunyomi": "ま-つ",
+            "onyomi": "タイ",
+            "examples": [
+                {   
+                    "rune": "待つ",
+                    "spelling": "ま・つ",
+                    "meaning": "Tunggu/menunggu"	
+                },
+                {   
+                    "rune": "待合室",
+                    "spelling": "まち・あい・しつ",
+                    "meaning": "Ruang tunggu"	
+                },
+                {   
+                    "rune": "招待する",
+                    "spelling": "しょう・たい・する",
+                    "meaning": "Mengundang"	
+                },
+                {   
+                    "rune": "期待する",
+                    "spelling": "き・たい・する",
+                    "meaning": "Mengharapkan"	
+                }
+            ]
+        },
+        {
+            "rune": "校",
+            "chapter": 11,
+            "kunyomi": "ー",
+            "onyomi": "コウ",
+            "examples": [
+                {   
+                    "rune": "学校",
+                    "spelling": "がっ・こう",
+                    "meaning": "Sekolah"	
+                },
+                {   
+                    "rune": "高校生",
+                    "spelling": "こう・こう・せい",
+                    "meaning": "Murid SMA"	
+                },
+                {   
+                    "rune": "校長",
+                    "spelling": "こう・ちょう",
+                    "meaning": "Kepala Sekolah"	
+                }
+            ]
+        },
+        {
+            "rune": "時",
+            "chapter": 11,
+            "kunyomi": "とき",
+            "onyomi": "ジ",
+            "examples": [
+                {   
+                    "rune": "時々",
+                    "spelling": "とき・どき",
+                    "meaning": "Kadang-kadang"	
+                },
+                {   
+                    "rune": "三時",
+                    "spelling": "さん・じ",
+                    "meaning": "Jam 3"	
+                },
+                {   
+                    "rune": "一時間",
+                    "spelling": "いち・じ・かん",
+                    "meaning": "1 jam"	
+                },
+                {   
+                    "rune": "⋆時計",
+                    "spelling": "とけい",
+                    "meaning": "Jam"	
+                }
+            ]
+        },
+        {
+            "rune": "言",
+            "chapter": 11,
+            "kunyomi": "い-う／こと",
+            "onyomi": "ゲン／ゴン",
+            "examples": [
+                {   
+                    "rune": "言う",
+                    "spelling": "い・う",
+                    "meaning": "Berkata"	
+                },
+                {   
+                    "rune": "言葉",
+                    "spelling": "こと・ば",
+                    "meaning": "Kata-kata"	
+                },
+                {   
+                    "rune": "言語",
+                    "spelling": "げん・ご",
+                    "meaning": "Bahasa"	
+                }
+            ]
+        },
+        {
+            "rune": "計",
+            "chapter": 11,
+            "kunyomi": "ー",
+            "onyomi": "ケイ",
+            "examples": [
+                {   
+                    "rune": "時計",
+                    "spelling": "と・けい",
+                    "meaning": "Jam"	
+                },
+                {   
+                    "rune": "体温計",
+                    "spelling": "たい・おん・けい",
+                    "meaning": "Termometer"	
+                }
+            ]
+        },
+        {
+            "rune": "語",
+            "chapter": 11,
+            "kunyomi": "かた-る",
+            "onyomi": "ゴ",
+            "examples": [
+                {   
+                    "rune": "日本語",
+                    "spelling": "に・ほん・ご",
+                    "meaning": "Bahasa Jepang"	
+                },
+                {   
+                    "rune": "英語",
+                    "spelling": "えい・ご",
+                    "meaning": "Bahasa Inggris"	
+                },
+                {   
+                    "rune": "中国語",
+                    "spelling": "ちゅう・ごく・ご",
+                    "meaning": "Bahasa China"	
+                },
+                {   
+                    "rune": "⋆物語",
+                    "spelling": "もの・がたり",
+                    "meaning": "Cerita"	
+                }
+            ]
+        },
+        {
+            "rune": "飯",
+            "chapter": 11,
+            "kunyomi": "（めし）",
+            "onyomi": "ハン",
+            "examples": [
+                {   
+                    "rune": "ご飯",
+                    "spelling": "ご・はん",
+                    "meaning": "Nasi"	
+                }
+            ]
+        },
+        {
+            "rune": "右",
+            "chapter": 12,
+            "kunyomi": "みぎ",
+            "onyomi": "ウ／ユウ",
+            "examples": [
+                {   
+                    "rune": "右",
+                    "spelling": "みぎ",
+                    "meaning": "Kanan"	
+                },
+                {   
+                    "rune": "右手",
+                    "spelling": "みぎ・て",
+                    "meaning": "Tangan kanan"	
+                }
+            ]
+        },
+        {
+            "rune": "左",
+            "chapter": 12,
+            "kunyomi": "ひだり",
+            "onyomi": "サ",
+            "examples": [
+                {   
+                    "rune": "左",
+                    "spelling": "ひだり",
+                    "meaning": "Kiri"	
+                },
+                {   
+                    "rune": "左手",
+                    "spelling": "ひだり・て",
+                    "meaning": "Tangan kiri"	
+                }
+            ]
+        },
+        {
+            "rune": "東",
+            "chapter": 12,
+            "kunyomi": "ひがし",
+            "onyomi": "トウ",
+            "examples": [
+                {   
+                    "rune": "東",
+                    "spelling": "ひがし",
+                    "meaning": "Timur"	
+                },
+                {   
+                    "rune": "東京",
+                    "spelling": "とう・きょう",
+                    "meaning": "Tokyo"	
+                }
+            ]
+        },
+        {
+            "rune": "西",
+            "chapter": 12,
+            "kunyomi": "にし",
+            "onyomi": "セイ／サイ",
+            "examples": [
+                {   
+                    "rune": "西",
+                    "spelling": "にし",
+                    "meaning": "Barat"	
+                }
+            ]
+        },
+        {
+            "rune": "北",
+            "chapter": 12,
+            "kunyomi": "きた",
+            "onyomi": "ホク・ホッ-",
+            "examples": [
+                {   
+                    "rune": "北",
+                    "spelling": "きた",
+                    "meaning": "Utara"	
+                },
+                {   
+                    "rune": "北米",
+                    "spelling": "ほく・べい",
+                    "meaning": "Amerika Utara (North America)"	
+                },
+                {   
+                    "rune": "北海道",
+                    "spelling": "ほっ・かい・どう",
+                    "meaning": "Hokkaido"	
+                }
+            ]
+        },
+        {
+            "rune": "南",
+            "chapter": 12,
+            "kunyomi": "みなみ",
+            "onyomi": "ナン",
+            "examples": [
+                {   
+                    "rune": "南",
+                    "spelling": "みなみ",
+                    "meaning": "Selatan"	
+                },
+                {   
+                    "rune": "南米",
+                    "spelling": "なん・べい",
+                    "meaning": "Amerika Selatan ( South America)"	
+                },
+                {   
+                    "rune": "南北",
+                    "spelling": "なん・ぼく",
+                    "meaning": "Utara dan Selatan"	
+                }
+            ]
+        },
+        {
+            "rune": "春",
+            "chapter": 12,
+            "kunyomi": "はる",
+            "onyomi": "シュン",
+            "examples": [
+                {   
+                    "rune": "春",
+                    "spelling": "はる",
+                    "meaning": "Musim Semi"	
+                }
+            ]
+        },
+        {
+            "rune": "夏",
+            "chapter": 12,
+            "kunyomi": "なつ",
+            "onyomi": "カ／ゲ",
+            "examples": [
+                {   
+                    "rune": "夏",
+                    "spelling": "なつ",
+                    "meaning": "Musim Panas"	
+                }
+            ]
+        },
+        {
+            "rune": "秋",
+            "chapter": 12,
+            "kunyomi": "あき",
+            "onyomi": "シュウ",
+            "examples": [
+                {   
+                    "rune": "秋",
+                    "spelling": "あき",
+                    "meaning": "Musim Gugur"	
+                }
+            ]
+        },
+        {
+            "rune": "冬",
+            "chapter": 12,
+            "kunyomi": "ふゆ",
+            "onyomi": "トウ",
+            "examples": [
+                {   
+                    "rune": "冬",
+                    "spelling": "ふゆ",
+                    "meaning": "Musim Dingin"	
                 }
             ]
         }

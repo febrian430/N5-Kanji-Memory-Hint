@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import { Alert, FlatList, StatusBar, StyleSheet, Text, TouchableOpacity, View } from "react-native";
-import shuffle from "../../helpers/shuffler";
+import shuffle from "../../helper/shuffler";
 import kanji from "../../assets/data/kanji.json"
 import { Full } from "../horizontal_scroll";
 

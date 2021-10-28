@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react"
 import { StatusBar, StyleSheet, View } from "react-native"
 import Kanji from "../../assets/data/kanji.json"
-import shuffle from "../../helpers/shuffler"
+import shuffle from "../../helper/shuffler"
 import { HorizontalScroll, Full } from "../horizontal_scroll"
 import Round from "./round"
+import { optionsForKanji, optionsForQuiz, questionsForQuiz } from "../../helper/repo"
 
 
 
@@ -18,18 +19,19 @@ const MultipleChoiceGame = ({ navigation, route }) => {
 
     useEffect(() => {
         const selectedChapters = route.params.chapters
-        const source = Kanji.kanji_collection.filter((kanji) => selectedChapters.includes(kanji.chapter))
-        const questionSource = shuffle(source)
-        const optionSource = source.map((option) => {
-            return option.meaning
-        })
+        // const source = Kanji.kanji_collection.filter((kanji) => selectedChapters.includes(kanji.chapter))
+        // const questionSource = shuffle(source)
+        // const optionSource = source.map((option) => {
+        //     return option.meaning
+        // })
+        const questionSource = questionsForQuiz(selectedChapters)
 
         const questions = questionSource.slice(0, 10)
         const qnas = questions.map((question) => {
-            const otherOptionCandidates = optionSource.filter((meaning) => meaning !== question.meaning).slice(0, 3)
-            let options = shuffle([question.meaning, ...otherOptionCandidates])
+            const options = optionsForQuiz(question, "meaning")
             return { question: question, options: options }
         })
+        console.log(qnas)
         setQAs(qnas)
     }, [])
 
