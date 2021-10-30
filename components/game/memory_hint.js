@@ -35,12 +35,12 @@ const MemoryHint = ({ route }) => {
     useEffect(() => {
       const selectedChapters = route.params.chapters
 
-      var source = kanji.kanji_collection.filter((kanji) => selectedChapters.includes(kanji.chapter))
+      var source = shuffle(kanji.kanji_collection.filter((kanji) => selectedChapters.includes(kanji.chapter))).slice(0,5)
       names = source.map((element) =>  { return { value: element.name, key: element.meaning }})
       meanings = source.map((element) => { return { value: element.meaning, key: element.name }} )
 
       mixed = [...names, ...meanings]
-      mixed = shuffle(mixed)
+      mixed = shuffle(mixed).slice()
 
       setOptions([...mixed])
     }, [])
@@ -94,7 +94,7 @@ const MemoryHint = ({ route }) => {
         <FlatList
           data={options}
           renderItem={renderItem}
-          keyExtractor={(item) => item.value}
+          keyExtractor={(item) => item.key}
           extraData={selected}
         />
       </Full>

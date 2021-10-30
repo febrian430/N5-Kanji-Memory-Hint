@@ -31,7 +31,6 @@ const MultipleChoiceGame = ({ navigation, route }) => {
             const options = optionsForQuiz(question, "meaning")
             return { question: question, options: options }
         })
-        console.log(qnas)
         setQAs(qnas)
     }, [])
 
@@ -55,7 +54,7 @@ const MultipleChoiceGame = ({ navigation, route }) => {
                     return (
                         <Round 
                             key={index} 
-                            question={question.name} 
+                            question={question.rune} 
                             options={options}
                             answer={question.meaning}
                             onCorrect={onCorrect}

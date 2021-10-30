@@ -6,10 +6,8 @@ import { HorizontalScroll, Full } from "../horizontal_scroll"
 const Study = ({ navigation, route }) => {
     const kanjis = route.params.kanjis
     const current = route.params.current
-    console.log("KANJI", kanjis, "CURRENT", current)
     const kanji = kanjis[current]
 
-    console.log(kanji)
     
     const next = () => {
         if(current < kanjis.length-1) {
