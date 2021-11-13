@@ -1,0 +1,32 @@
+[
+    {
+        "rune": "some rune 1",
+        "spelling": "abc",
+        "meaning": "def",
+        "chapter": "1"
+    },
+    {
+        "rune": "some rune 2",
+        "spelling": "def",
+        "meaning": "def",
+        "chapter": "1"
+    },
+    {
+        "rune": "some rune 3",
+        "spelling": "ghi",
+        "meaning": "def",
+        "chapter": "1"
+    },
+    {
+        "rune": "some rune 4",
+        "spelling": "jkl",
+        "meaning": "def",
+        "chapter": "1"
+    },
+    {
+        "rune": "some rune 5",
+        "spelling": "mno",
+        "meaning": "def",
+        "chapter": "1"
+    }
+]

@@ -1,6 +1,8 @@
 import Kanji from '../assets/data/temp.json'
 import { kanjis as _kanjis } from '../assets/data/temp.json';
 import distinct from '../assets/data/distinct.json';
+import kanjis from '../assets/data/jumble_data.json';
+
 import shuffle from './shuffler';
 
 
@@ -38,5 +40,29 @@ const optionsForQuiz = (kanji, key) => {
     return options
 }
 
-export { kanjisByChapter, optionsForQuiz, questionsForQuiz }
+//TODO: change to real kanji
+const questionForJumble = () => {
+    const selectedKanji = shuffle(kanjis)[0]
+    const question = { value: selectedKanji.rune, key: selectedKanji.spelling }
+    const options = optionsForJumble(selectedKanji)
+    return { question, options }
+}
+
+
+//TODO: change to real kanji
+const optionsForJumble = (kanji) => {
+    const NUM_OF_OPTIONS = 10
+    const spelling = kanji.spelling.split('')
+    const otherOpts = shuffle(kanjis.filter(({rune}) => rune !== kanji.rune)
+            .map(({spelling}) => spelling)
+            .reduce((prev, val) => prev+val)
+            .split('')
+    ).slice(0, NUM_OF_OPTIONS-spelling.length)
+
+    const combined = [...spelling, ...otherOpts]
+    
+    return shuffle(combined)
+}
+
+export { kanjisByChapter, optionsForQuiz, questionsForQuiz, questionForJumble, optionsForJumble }
 
