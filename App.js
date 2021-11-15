@@ -11,6 +11,11 @@ import Study from './components/learn/study'
 import ChapterSelect from './components/chapter_select'
 
 import Test from './components/test'
+import Jumble from './components/game/jumble'
+import Picky from './components/game/picky';
+
+
+
 
 const Stack = createNativeStackNavigator()
 
@@ -45,6 +50,16 @@ const Home = ({ navigation }) => {
           buttonTitle: "Start Mix and Match"
         })}
       />
+
+      <Button 
+        title="Jumble"
+        onPress= {() => navigation.navigate('Jumble')}
+      />
+
+      <Button 
+        title="Pick"
+        onPress= {() => navigation.navigate('Pick')}
+      />
        {/* <MemoryHint />
        <MultipleChoice />
 
@@ -56,15 +71,6 @@ const Home = ({ navigation }) => {
 
 export default function App() {
   return (
-    // <View style={styles.container}>
-    //   <StatusBar style="auto" />
-      
-    //   {/* <MemoryHint /> */}
-    //   {/* <MultipleChoice /> */}
-      
-    //   {/* <Material /> */}
-    //   {/* <Test /> */}
-    // {/* </View> */}
 
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home">
@@ -74,6 +80,8 @@ export default function App() {
         <Stack.Screen name="Chapter Select" component={ChapterSelect} />
         <Stack.Screen name="Multiple Choice" component={MultipleChoice} />
         <Stack.Screen name="Mix-Match" component={MemoryHint} />
+        <Stack.Screen name="Jumble" component={Jumble} />
+        <Stack.Screen name="Pick" component={Picky} />
       </Stack.Navigator>
     </NavigationContainer>
   );
