@@ -29,7 +29,7 @@ const Option = ({value, onPress, disabled}) => {
 
 
 //@ts-check
-const Jumble = () => {
+const Jumble = ({navigation, route}) => {
     const isInitial = useRef(true)
     const [question, setQuestion] = useState({})
     const [selected, setSelected] = useState([]) 
@@ -71,10 +71,10 @@ const Jumble = () => {
     const checkAnswer = () => {
         let wrongIndexes = diff(selected, answer)
         if(wrongIndexes.length !== 0) {
-            alert("FUCKING WRONG KID")
+            alert("wrong")
             unselect(...wrongIndexes)
         } else {
-            alert("lucky man")
+            alert("correct")
         } 
     }
 
