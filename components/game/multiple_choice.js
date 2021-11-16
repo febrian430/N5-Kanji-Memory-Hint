@@ -3,6 +3,7 @@ import { StatusBar, StyleSheet, View } from "react-native"
 import Kanji from "../../assets/data/kanji.json"
 import shuffle from "../../helper/shuffler"
 import { HorizontalScroll, Full } from "../horizontal_scroll"
+import Screen from '../cmps/screen'
 import Round from "./round"
 import { optionsForKanji, optionsForQuiz, questionsForQuiz } from "../../helper/repo"
 
@@ -48,7 +49,7 @@ const MultipleChoiceGame = ({ navigation, route }) => {
     }
 
     return (
-        <View style={styles.container}>
+        <Screen>
             <HorizontalScroll>
                 {QAs.map(({question, options}, index) => {
                     return (
@@ -63,7 +64,7 @@ const MultipleChoiceGame = ({ navigation, route }) => {
                     )
                 })}
             </HorizontalScroll>
-        </View>
+        </Screen>
     )
 }
 

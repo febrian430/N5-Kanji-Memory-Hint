@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import { Alert, FlatList, StatusBar, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import shuffle from "../../helper/shuffler";
+import Screen from '../cmps/screen'
 import kanji from "../../assets/data/kanji.json"
 import { Full } from "../horizontal_scroll";
 
@@ -90,14 +91,16 @@ const MemoryHint = ({ route }) => {
     };
 
     return (
-      <Full style={[styles.container]}>
-        <FlatList
-          data={options}
-          renderItem={renderItem}
-          keyExtractor={(item) => item.key}
-          extraData={selected}
-        />
-      </Full>
+      <Screen>
+        <Full style={[styles.container]}>
+          <FlatList
+            data={options}
+            renderItem={renderItem}
+            keyExtractor={(item) => item.key}
+            extraData={selected}
+          />
+        </Full>
+      </Screen>
     );
 };
 

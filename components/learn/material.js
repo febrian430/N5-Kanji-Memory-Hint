@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { FlatList, ScrollView, Text, View } from "react-native";
+import { FlatList, ScrollView, StatusBar, StyleSheet, Text, View } from "react-native";
 import { TouchableOpacity } from "react-native-gesture-handler";
 import Kanji from "../../assets/data/kanji.json"
-import { Full, HorizontalScroll } from "../horizontal_scroll";
+import Screen from "../cmps/screen"
 
 const ChapterListOption = ({chapter, onPress}) => {
     return (
@@ -42,8 +42,9 @@ const Material = ({ navigation }) => {
     }
 
     return (
-        <ScrollView>
-            <View>
+        <Screen>
+
+            <View style={[styles.container]}>
             {chapters.map((chapter, index) => {  
                 return (
                     <ChapterListOption 
@@ -63,8 +64,17 @@ const Material = ({ navigation }) => {
                 >
                 </FlatList>
             </View>
-        </ScrollView>
+        </Screen>
     )
 }
+
+const styles = StyleSheet.create({
+    container: {
+    //   flex: 1,
+    //   backgroundColor: '#fff',
+    //   alignItems: 'center',
+    //   justifyContent: 'center',
+    }
+  });
 
 export default Material

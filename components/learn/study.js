@@ -1,6 +1,7 @@
 import React from "react";
-import { Button, Dimensions, StyleSheet, Text } from "react-native";
+import { Button, Dimensions, StatusBar, StyleSheet, Text } from "react-native";
 import { HorizontalScroll, Full } from "../horizontal_scroll"
+import Screen from '../cmps/screen'
 
 
 const Study = ({ navigation, route }) => {
@@ -30,20 +31,22 @@ const Study = ({ navigation, route }) => {
     
 
     return (
-        <HorizontalScroll>
-            <Full>
-                <Text>{kanji.name}</Text>
-                <Text>({kanji.pronounciation})</Text>
-                <Text>{kanji.meaning}</Text>
-            </Full>
-            <Full>
-                <Text>Stroke order</Text>
-            </Full>
-            <Full>
-                <Text>Slide 3</Text>
-                {next()}
-            </Full>
-        </HorizontalScroll>
+        <Screen>
+            <HorizontalScroll>
+                <Full>
+                    <Text>{kanji.name}</Text>
+                    <Text>({kanji.pronounciation})</Text>
+                    <Text>{kanji.meaning}</Text>
+                </Full>
+                <Full>
+                    <Text>Stroke order</Text>
+                </Full>
+                <Full>
+                    <Text>Slide 3</Text>
+                    {next()}
+                </Full>
+            </HorizontalScroll>
+        </Screen>
     )
 }
 

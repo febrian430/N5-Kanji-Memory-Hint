@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { FlatList, ScrollView, Text, Touchable, View } from 'react-native'
 import { TouchableOpacity } from 'react-native-gesture-handler'
+import Screen from '../cmps/screen'
 import { questionForJumble, optionsForJumble } from '../../helper/repo'
 
 const SENTINEL_VALUE = "-1"
@@ -130,7 +131,7 @@ const Jumble = ({navigation, route}) => {
     }
 
     return (
-        <View style={{flex: 1}}>
+        <Screen style={{flex: 1}}>
 
             <Text>{question.value}</Text>
             
@@ -152,7 +153,7 @@ const Jumble = ({navigation, route}) => {
                         keyExtractor={(item) => item}
                     />
                 </ScrollView>
-        </View>
+        </Screen>
     )
 }
 

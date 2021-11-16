@@ -1,6 +1,7 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import Draggable from './draggable'
+import Screen from '../cmps/screen'
 
 const Picky = () => {
 
@@ -21,11 +22,7 @@ const Picky = () => {
     }
 
     return (
-        <View style={[styles.mainContainer, 
-        {
-            backgroundColor: "green"
-        }]}
-        >
+        <Screen>
             <View style={styles.dropZone}>
                 <Text style={styles.text}>Drop them here!</Text>
             </View>
@@ -37,7 +34,7 @@ const Picky = () => {
                 <Draggable value="jkl" onDrop={onDropFalse} />
                 <Draggable value="mno" onDrop={onDropCorrect} />
             </View>
-      </View>
+      </Screen>
     )
 }
 

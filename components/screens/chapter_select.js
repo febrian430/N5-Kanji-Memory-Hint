@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Button, FlatList, StyleSheet, Text, View, TouchableOpacity } from "react-native";
-import Kanji from '../assets/data/kanji.json'
+import Kanji from '../../assets/data/kanji.json'
+import Screen from '../cmps/screen'
 
 const Chapter = ({onPress, title, selected}) => {
     const selectedStyle = selected ? styles.button_selected : styles.button
@@ -76,7 +77,7 @@ const ChapterSelect = ({ navigation, route }) => {
     }
 
     return (
-        <View>
+        <Screen>
             <FlatList 
                 data={chapterNumbers}
                 renderItem={renderChapters}
@@ -87,7 +88,7 @@ const ChapterSelect = ({ navigation, route }) => {
             <Button 
                 title={buttonTitle} 
                 onPress={nextScreen}  />
-        </View>
+        </Screen>
     )
 }
 
