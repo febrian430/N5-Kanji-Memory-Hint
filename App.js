@@ -8,29 +8,21 @@ import MemoryHint from './components/game/memory_hint'
 import MultipleChoice from './components/game/multiple_choice'
 import Material from './components/learn/material'
 import Study from './components/learn/study'
-import ChapterSelect from './components/chapter_select'
+import ChapterSelect from './components/screens/chapter_select'
 
 import Test from './components/test'
 import Jumble from './components/game/jumble'
 import Picky from './components/game/picky';
-
-
-
+import MenuButton from './components/cmps/menu_button'
 
 const Stack = createNativeStackNavigator()
 
-const Home = ({ navigation }) => {
+const Practice = ({navigation}) => {
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
-      <Text>Hi</Text>
 
-      <Button 
-        title="Material"
-        onPress= {() => navigation.navigate('Material')}
-      />
-
-      <Button 
+      <MenuButton 
         title="Multiple Choice"
         onPress= {() => navigation.navigate('Chapter Select', 
         {
@@ -40,8 +32,7 @@ const Home = ({ navigation }) => {
           buttonTitle: "Start multiple choice"
         })}
       />
-
-      <Button 
+      <MenuButton 
         title="Mix and Match"
         onPress= {() => navigation.navigate('Chapter Select', 
         {
@@ -50,21 +41,39 @@ const Home = ({ navigation }) => {
           buttonTitle: "Start Mix and Match"
         })}
       />
-
-      <Button 
+      <MenuButton 
         title="Jumble"
         onPress= {() => navigation.navigate('Jumble')}
       />
-
-      <Button 
-        title="Pick"
+      <MenuButton 
+        title="Pick and Drop"
         onPress= {() => navigation.navigate('Pick')}
       />
-       {/* <MemoryHint />
-       <MultipleChoice />
+    </View>
+  )
+}
 
-       <Material />
-       <Test /> */}
+const Quiz = ({ navigation }) => {
+  return (
+    <Text>Quiz Game</Text>
+  )
+}
+
+const Home = ({ navigation }) => {
+  return (
+    <View style={styles.container}>
+      <StatusBar style="auto" />
+
+      <MenuButton 
+        title="List"
+        onPress= {() => navigation.navigate('Material')}
+      />
+
+      <MenuButton 
+        title="Practice"
+        onPress= {() => navigation.navigate('Practice')}
+      />
+
      </View>
   )
 }
@@ -73,7 +82,10 @@ export default function App() {
   return (
 
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Home">
+      <Stack.Navigator initialRouteName="Home" screenOptions={{
+          headerShown: false
+        }}
+      >
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="Material" component={Material} />
         <Stack.Screen name="Study" component={Study} />
@@ -82,6 +94,9 @@ export default function App() {
         <Stack.Screen name="Mix-Match" component={MemoryHint} />
         <Stack.Screen name="Jumble" component={Jumble} />
         <Stack.Screen name="Pick" component={Picky} />
+        
+        <Stack.Screen name="Practice" component={Practice} />
+        <Stack.Screen name="Quiz" component={Quiz} />
       </Stack.Navigator>
     </NavigationContainer>
   );
@@ -92,6 +107,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'center',
-  },
+    justifyContent: 'space-evenly',
+  }
 });
