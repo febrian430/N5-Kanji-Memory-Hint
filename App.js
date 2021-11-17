@@ -14,6 +14,8 @@ import Test from './components/test'
 import Jumble from './components/game/jumble'
 import Picky from './components/game/picky';
 import MenuButton from './components/cmps/menu_button'
+import Screen from './components/cmps/screen'
+
 
 const Stack = createNativeStackNavigator()
 
@@ -55,13 +57,15 @@ const Practice = ({navigation}) => {
 
 const Quiz = ({ navigation }) => {
   return (
-    <Text>Quiz Game</Text>
+    <Screen>
+      <Text>Quiz Game</Text>
+    </Screen>
   )
 }
 
 const Home = ({ navigation }) => {
   return (
-    <View style={styles.container}>
+    <Screen style={styles.container}>
       <StatusBar style="auto" />
 
       <MenuButton 
@@ -74,7 +78,12 @@ const Home = ({ navigation }) => {
         onPress= {() => navigation.navigate('Practice')}
       />
 
-     </View>
+      <MenuButton 
+        title="Quiz"
+        onPress= {() => navigation.navigate('Quiz')}
+      />
+
+     </Screen>
   )
 }
 
