@@ -1,40 +1,50 @@
-import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import React, { useEffect, useState } from 'react'
+import { Animated, StyleSheet, Text, View } from 'react-native'
 import Draggable from './draggable'
 import Screen from '../cmps/screen'
+import { FIELD, JUMBLE, SCREEN } from '../const'
+import { Distinct } from '../../helper/repo'
+import { questionsForQuiz, optionsForQuiz } from "../../helper/repo"
 
-const Picky = () => {
 
-    const onDropCorrect = (value, coordinate) => {
-        if(coordinate.y < 200) {
-            return 1
+const Picky = ({ navigation, route }) => {
+
+    const [question, setQuestion] = useState({})
+    const [options, setOptions] = useState([])
+
+    useEffect(() => {
+      const selectedChapters = [1]
+      const q = questionsForQuiz(selectedChapters).slice(0,1)
+      const o = optionsForQuiz(q[0], FIELD.RUNE)
+      console.log(q,o)
+      setQuestion(q[0])
+      setOptions(o)
+      console.log("FUCK YOU")
+    }, [])
+
+
+    const onDrop = (value, coordinate) => {
+        if(coordinate.y > 350) {
+          return JUMBLE.OUT_OF_DROPZONE
+        }
+        
+        if(value === question.rune) {
+          return JUMBLE.CORRECT
         } else {
-            return -1
+          return JUMBLE.WRONG
         }
     }
-
-    const onDropFalse = (value, coordinate) => {
-        if(coordinate.y < 200) {
-            return 0
-        } else {
-            return -1
-        }
-    }
-
     return (
         <Screen>
             <View style={styles.dropZone}>
-                <Text style={styles.text}>Drop them here!</Text>
+                <Text style={styles.text}>{question.image}</Text>
             </View>
-            <View style={styles.ballContainer} />
             <View style={styles.row}>
-                <Draggable value="asd" onDrop={onDropCorrect} />
-                <Draggable value="def" onDrop={onDropFalse} />
-                <Draggable value="ghi" onDrop={onDropCorrect} />
-                <Draggable value="jkl" onDrop={onDropFalse} />
-                <Draggable value="mno" onDrop={onDropCorrect} />
+                {options.map((val) => {
+                  return (<Draggable value={val} onDrop={onDrop} />)
+                })}
             </View>
-      </Screen>
+        </Screen>
     )
 }
 
@@ -45,14 +55,18 @@ const styles = StyleSheet.create({
       flex: 1
     },
     ballContainer: {
-      height:200
+      height: 100
     },
     row: {
-      flexDirection: "row"
+      flex: 1,
+      flexDirection: "row",
+      // flexWrap: "wrap",
+      justifyContent: "space-around"
     },  
     dropZone: {
-      height: 100,
-      backgroundColor: "#00334d"
+      height: 300,
+      backgroundColor: "#00334d",
+      marginBottom: 100
     },
     text: {
       marginTop: 25,
@@ -63,4 +77,4 @@ const styles = StyleSheet.create({
       fontSize: 25,
       fontWeight: "bold"
     }
-  });
+});
