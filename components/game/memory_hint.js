@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import { Alert, FlatList, StatusBar, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import shuffle from "../../helper/shuffler";
 import Screen from '../cmps/screen'
-import kanji from "../../assets/data/kanji.json"
+import kanji from "../../assets/data/examples.json"
 import { Full } from "../horizontal_scroll";
 
 const Option = ({value, onPress, disabled, selected}) => {
@@ -36,11 +36,11 @@ const MemoryHint = ({ route }) => {
     useEffect(() => {
       const selectedChapters = route.params.chapters
 
-      var source = shuffle(kanji.kanji_collection.filter((kanji) => selectedChapters.includes(kanji.chapter))).slice(0,5)
-      names = source.map((element) =>  { return { value: element.name, key: element.meaning }})
-      meanings = source.map((element) => { return { value: element.meaning, key: element.name }} )
+      var source = shuffle(kanji.filter((kanji) => selectedChapters.includes(kanji.chapter))).slice(0,5)
+      runes = source.map((element) =>  { return { value: element.rune, key: element.meaning }})
+      meanings = source.map((element) => { return { value: element.meaning, key: element.rune }} )
 
-      mixed = [...names, ...meanings]
+      mixed = [...runes, ...meanings]
       mixed = shuffle(mixed).slice()
 
       setOptions([...mixed])

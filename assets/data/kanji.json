@@ -1,117 +1,117 @@
 {
     "kanji_collection": [
         {
-            "name": "kanji A",
+            "rune": "kanji A",
             "meaning": "meaning A",
-            "pronounciation": "pronounc A",
+            "spelling": "pronounc A",
             "chapter": 1
         }, 
         {
-            "name": "kanji B",
+            "rune": "kanji B",
             "meaning": "meaning B",
-            "pronounciation": "pronounc B",
+            "spelling": "pronounc B",
             "chapter": 1
         }, 
         {
-            "name": "kanji C",
+            "rune": "kanji C",
             "meaning": "meaning C",
-            "pronounciation": "pronounc C",
+            "spelling": "pronounc C",
             "chapter": 1
         }, 
         {
-            "name": "kanji D",
+            "rune": "kanji D",
             "meaning": "meaning D",
-            "pronounciation": "pronounc D",
+            "spelling": "pronounc D",
             "chapter": 1
         }, 
         {
-            "name": "kanji uoiy",
+            "rune": "kanji uoiy",
             "meaning": "meaning uoiy",
-            "pronounciation": "pronounc uoiy",
+            "spelling": "pronounc uoiy",
             "chapter": 2
         }, 
         {
-            "name": "kanji bt",
+            "rune": "kanji bt",
             "meaning": "meaning bt",
-            "pronounciation": "pronounc bt",
+            "spelling": "pronounc bt",
             "chapter": 2
         }, 
         {
-            "name": "kanji eh",
+            "rune": "kanji eh",
             "meaning": "meaning eh",
-            "pronounciation": "pronounc eh",
+            "spelling": "pronounc eh",
             "chapter": 2
         }, 
         {
-            "name": "kanji 12",
+            "rune": "kanji 12",
             "meaning": "meaning 12",
-            "pronounciation": "pronounc 12",
+            "spelling": "pronounc 12",
             "chapter": 3
         }, 
         {
-            "name": "kanji 58",
+            "rune": "kanji 58",
             "meaning": "meaning 58",
-            "pronounciation": "pronounc 58",
+            "spelling": "pronounc 58",
             "chapter": 3
         }, 
         {
-            "name": "kanji yj",
+            "rune": "kanji yj",
             "meaning": "meaning yj",
-            "pronounciation": "pronounc yj",
+            "spelling": "pronounc yj",
             "chapter": 3
         }, 
         {
-            "name": "kanji bv",
+            "rune": "kanji bv",
             "meaning": "meaning bv",
-            "pronounciation": "pronounc bv",
+            "spelling": "pronounc bv",
             "chapter": 4
         }, 
         {
-            "name": "kanji ht",
+            "rune": "kanji ht",
             "meaning": "meaning ht",
-            "pronounciation": "pronounc ht",
+            "spelling": "pronounc ht",
             "chapter": 4
         }, 
         {
-            "name": "kanji rq",
+            "rune": "kanji rq",
             "meaning": "meaning rq",
-            "pronounciation": "pronounc rq",
+            "spelling": "pronounc rq",
             "chapter": 4
         }, 
         {
-            "name": "kanji 96",
+            "rune": "kanji 96",
             "meaning": "meaning 96",
-            "pronounciation": "pronounc 96",
+            "spelling": "pronounc 96",
             "chapter": 5
         }, 
         {
-            "name": "kanji xd",
+            "rune": "kanji xd",
             "meaning": "meaning xd",
-            "pronounciation": "pronounc xd",
+            "spelling": "pronounc xd",
             "chapter": 5
         }, 
         {
-            "name": "kanji az",
+            "rune": "kanji az",
             "meaning": "meaning az",
-            "pronounciation": "pronounc az",
+            "spelling": "pronounc az",
             "chapter": 5
         }, 
         {
-            "name": "kanji tjgh",
+            "rune": "kanji tjgh",
             "meaning": "meaning tjgh",
-            "pronounciation": "pronounc tjgh",
+            "spelling": "pronounc tjgh",
             "chapter": 6
         }, 
         {
-            "name": "kanji wd",
+            "rune": "kanji wd",
             "meaning": "meaning wd",
-            "pronounciation": "pronounc wd",
+            "spelling": "pronounc wd",
             "chapter": 6
         }, 
         {
-            "name": "kanji wq",
+            "rune": "kanji wq",
             "meaning": "meaning wq",
-            "pronounciation": "pronounc wq",
+            "spelling": "pronounc wq",
             "chapter": 6
         }
     ]
