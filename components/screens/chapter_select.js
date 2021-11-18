@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Button, FlatList, StyleSheet, Text, View, TouchableOpacity } from "react-native";
-import Kanji from '../../assets/data/kanji.json'
+import { Kanji }  from '../../helper/repo'
 import Screen from '../cmps/screen'
 
 const Chapter = ({onPress, title, selected}) => {
@@ -24,8 +24,10 @@ const ChapterSelect = ({ navigation, route }) => {
 
     const [chapterNumbers, setChapterNumbers] = useState([])
 
+    const gameMode = route.params.mode
+
     useEffect(() => {
-        const kanjis = Kanji.kanji_collection
+        const kanjis = Kanji
         const cNumbers = kanjis.map(kanji => kanji.chapter)
             .filter((chapter, index, self) => self.indexOf(chapter) === index)
         setChapterNumbers([...cNumbers])
@@ -62,7 +64,8 @@ const ChapterSelect = ({ navigation, route }) => {
 
     const nextScreen = () => {
         navigation.navigate(renderNext, {
-            chapters: selected
+            chapters: selected,
+            mode: gameMode
         })
     }
 

@@ -2,8 +2,9 @@ import React, { useEffect, useState, useRef } from "react";
 import { Alert, FlatList, StatusBar, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import shuffle from "../../helper/shuffler";
 import Screen from '../cmps/screen'
-import kanji from "../../assets/data/examples.json"
+import { Kanji as kanji } from "../../helper/repo"
 import { Full } from "../horizontal_scroll";
+import { MODE, FIELD } from "../const";
 
 const Option = ({value, onPress, disabled, selected}) => {
 
@@ -30,18 +31,33 @@ const MemoryHint = ({ route }) => {
     const [solved, setSolved] = useState([])
     const [selected, setSelected] = useState([])
     const [wrongCount, setWrongCount] = useState(0)
-
+    const [mode, setMode] = useState(MODE.IMAGE_MEANING)
     const isStarted = useRef(false)
 
     useEffect(() => {
+      function getKeys(mode) {
+        if(mode === MODE.IMAGE_MEANING) {
+          return [FIELD.IMAGE, FIELD.RUNE]
+        } else {
+          return [FIELD.RUNE, FIELD.SPELLING]
+        }
+      }
+
+
       const selectedChapters = route.params.chapters
+      
+      const gameMode = route.params.mode
+      setMode(gameMode)
+      const [key1, key2] = getKeys(gameMode)
+
+      console.log("GAME MODE:", gameMode)
 
       var source = shuffle(kanji.filter((kanji) => selectedChapters.includes(kanji.chapter))).slice(0,5)
-      runes = source.map((element) =>  { return { value: element.rune, key: element.meaning }})
-      meanings = source.map((element) => { return { value: element.meaning, key: element.rune }} )
+      questions = source.map((element) =>  { return { value: element[key1], key: element[key2] }})
+      answers = source.map((element) => { return { value: element[key2], key: element[key1] }} )
 
-      mixed = [...runes, ...meanings]
-      mixed = shuffle(mixed).slice()
+      mixed = [...questions, ...answers]
+      mixed = shuffle(mixed)
 
       setOptions([...mixed])
     }, [])
@@ -78,10 +94,10 @@ const MemoryHint = ({ route }) => {
       }
     }, [solved])
 
-    const renderItem = ({ item, index }) => {
+    const renderItem = ({ item }) => {
       return (
         <Option
-          key={index}
+          key={item.value}
           value={item.value}
           onPress={() => onOptionPress(item)}
           disabled={solved.includes(item)}
@@ -96,13 +112,13 @@ const MemoryHint = ({ route }) => {
           <FlatList
             data={options}
             renderItem={renderItem}
-            keyExtractor={(item) => item.key}
+            keyExtractor={(item, index) => `${index}`}
             extraData={selected}
           />
         </Full>
       </Screen>
     );
-};
+};  
 
 const styles = StyleSheet.create({
   container: {

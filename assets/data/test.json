@@ -1,0 +1,135 @@
+[
+        {
+            "rune": "kanji A",
+            "meaning": "meaning A",
+            "spelling": "pronounc A",
+            "image": "image A",
+            "chapter": 1
+        }, 
+        {
+            "rune": "kanji B",
+            "meaning": "meaning B",
+            "spelling": "pronounc B",
+            "image": "image B",
+            "chapter": 1
+        }, 
+        {
+            "rune": "kanji C",
+            "meaning": "meaning C",
+            "spelling": "pronounc C",
+            "image": "image C",
+            "chapter": 1
+        }, 
+        {
+            "rune": "kanji D",
+            "meaning": "meaning D",
+            "spelling": "pronounc D",
+            "image": "image D",
+            "chapter": 1
+        }, 
+        {
+            "rune": "kanji uoiy",
+            "meaning": "meaning uoiy",
+            "spelling": "pronounc uoiy",
+            "image": "image uoiy",
+            "chapter": 2
+        }, 
+        {
+            "rune": "kanji bt",
+            "meaning": "meaning bt",
+            "spelling": "pronounc bt",
+            "image": "image bt",
+            "chapter": 2
+        }, 
+        {
+            "rune": "kanji eh",
+            "meaning": "meaning eh",
+            "spelling": "pronounc eh",
+            "image": "image eh",
+            "chapter": 2
+        }, 
+        {
+            "rune": "kanji 12",
+            "meaning": "meaning 12",
+            "spelling": "pronounc 12",
+            "image": "image 12",
+            "chapter": 3
+        }, 
+        {
+            "rune": "kanji 58",
+            "meaning": "meaning 58",
+            "spelling": "pronounc 58",
+            "image": "image 58",
+            "chapter": 3
+        }, 
+        {
+            "rune": "kanji yj",
+            "meaning": "meaning yj",
+            "spelling": "pronounc yj",
+            "image": "image yj",
+            "chapter": 3
+        }, 
+        {
+            "rune": "kanji bv",
+            "meaning": "meaning bv",
+            "spelling": "pronounc bv",
+            "image": "image bv",
+            "chapter": 4
+        }, 
+        {
+            "rune": "kanji ht",
+            "meaning": "meaning ht",
+            "spelling": "pronounc ht",
+            "image": "image ht",
+            "chapter": 4
+        }, 
+        {
+            "rune": "kanji rq",
+            "meaning": "meaning rq",
+            "spelling": "pronounc rq",
+            "image": "image rq",
+            "chapter": 4
+        }, 
+        {
+            "rune": "kanji 96",
+            "meaning": "meaning 96",
+            "spelling": "pronounc 96",
+            "image": "image 96",
+            "chapter": 5
+        }, 
+        {
+            "rune": "kanji xd",
+            "meaning": "meaning xd",
+            "spelling": "pronounc xd",
+            "image": "image xd",
+            "chapter": 5
+        }, 
+        {
+            "rune": "kanji az",
+            "meaning": "meaning az",
+            "spelling": "pronounc az",
+            "image": "image az",
+            "chapter": 5
+        }, 
+        {
+            "rune": "kanji tjgh",
+            "meaning": "meaning tjgh",
+            "spelling": "pronounc tjgh",
+            "image": "image tjgh",
+            "chapter": 6
+        }, 
+        {
+            "rune": "kanji wd",
+            "meaning": "meaning wd",
+            "spelling": "pronounc wd",
+            "image": "image wd",
+            "chapter": 6
+        }, 
+        {
+            "rune": "kanji wq",
+            "meaning": "meaning wq",
+            "spelling": "pronounc wq",
+            "image": "image wq",
+            "chapter": 6
+        }
+    ]

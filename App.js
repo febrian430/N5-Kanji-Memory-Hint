@@ -9,12 +9,16 @@ import MultipleChoice from './components/game/multiple_choice'
 import Material from './components/learn/material'
 import Study from './components/learn/study'
 import ChapterSelect from './components/screens/chapter_select'
+import ModeSelect from './components/screens/mode_select'
+
 
 import Test from './components/test'
 import Jumble from './components/game/jumble'
 import Picky from './components/game/picky';
 import MenuButton from './components/cmps/menu_button'
 import Screen from './components/cmps/screen'
+
+import { SCREEN } from './components/const'
 
 
 const Stack = createNativeStackNavigator()
@@ -26,30 +30,31 @@ const Practice = ({navigation}) => {
 
       <MenuButton 
         title="Multiple Choice"
-        onPress= {() => navigation.navigate('Chapter Select', 
+        onPress= {() => navigation.navigate(SCREEN.CHAPTER_SELECT, 
         {
           multi: true,
           triggerOnSelect: true,
-          renderNext: "Multiple Choice",
+          renderNext: SCREEN.MUL_CHOICE,
           buttonTitle: "Start multiple choice"
         })}
       />
       <MenuButton 
         title="Mix and Match"
-        onPress= {() => navigation.navigate('Chapter Select', 
+        onPress= {() => navigation.navigate(SCREEN.MODE_SELECT, 
         {
-          multi: true,
-          renderNext: "Mix-Match",
-          buttonTitle: "Start Mix and Match"
+          game: SCREEN.MIX_MATCH
         })}
       />
       <MenuButton 
         title="Jumble"
-        onPress= {() => navigation.navigate('Jumble')}
+        onPress= {() => navigation.navigate(SCREEN.MODE_SELECT,
+        {
+          game: SCREEN.JUMBLE
+        })}
       />
       <MenuButton 
         title="Pick and Drop"
-        onPress= {() => navigation.navigate('Pick')}
+        onPress= {() => navigation.navigate(SCREEN.PICK_DROP)}
       />
     </View>
   )
@@ -70,17 +75,17 @@ const Home = ({ navigation }) => {
 
       <MenuButton 
         title="List"
-        onPress= {() => navigation.navigate('Material')}
+        onPress= {() => navigation.navigate(SCREEN.LIST)}
       />
 
       <MenuButton 
         title="Practice"
-        onPress= {() => navigation.navigate('Practice')}
+        onPress= {() => navigation.navigate(SCREEN.PRACTICE)}
       />
 
       <MenuButton 
         title="Quiz"
-        onPress= {() => navigation.navigate('Quiz')}
+        onPress= {() => navigation.navigate(SCREEN.QUIZ)}
       />
 
      </Screen>
@@ -91,21 +96,23 @@ export default function App() {
   return (
 
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Home" screenOptions={{
+      <Stack.Navigator initialRouteName={SCREEN.HOME} screenOptions={{
           headerShown: false
         }}
       >
-        <Stack.Screen name="Home" component={Home} />
-        <Stack.Screen name="Material" component={Material} />
-        <Stack.Screen name="Study" component={Study} />
-        <Stack.Screen name="Chapter Select" component={ChapterSelect} />
-        <Stack.Screen name="Multiple Choice" component={MultipleChoice} />
-        <Stack.Screen name="Mix-Match" component={MemoryHint} />
-        <Stack.Screen name="Jumble" component={Jumble} />
-        <Stack.Screen name="Pick" component={Picky} />
+        <Stack.Screen name={SCREEN.HOME} component={Home} />
+        <Stack.Screen name={SCREEN.LIST} component={Material} />
+        <Stack.Screen name={SCREEN.STUDY} component={Study} />
+        <Stack.Screen name={SCREEN.CHAPTER_SELECT} component={ChapterSelect} />
+        <Stack.Screen name={SCREEN.MUL_CHOICE} component={MultipleChoice} />
+        <Stack.Screen name={SCREEN.MIX_MATCH} component={MemoryHint} />
+        <Stack.Screen name={SCREEN.JUMBLE} component={Jumble} />
+        <Stack.Screen name={SCREEN.PICK_DROP} component={Picky} />
+        <Stack.Screen name={SCREEN.MODE_SELECT} component={ModeSelect} />
+
         
-        <Stack.Screen name="Practice" component={Practice} />
-        <Stack.Screen name="Quiz" component={Quiz} />
+        <Stack.Screen name={SCREEN.PRACTICE} component={Practice} />
+        <Stack.Screen name={SCREEN.QUIZ} component={Quiz} />
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react"
 import { StatusBar, StyleSheet, View } from "react-native"
-import Kanji from "../../assets/data/kanji.json"
 import shuffle from "../../helper/shuffler"
 import { HorizontalScroll, Full } from "../horizontal_scroll"
 import Screen from '../cmps/screen'

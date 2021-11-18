@@ -3,6 +3,8 @@ import { FlatList, ScrollView, StatusBar, StyleSheet, Text, View } from "react-n
 import { TouchableOpacity } from "react-native-gesture-handler";
 import Kanji from "../../assets/data/kanji.json"
 import Screen from "../cmps/screen"
+import { SCREEN } from "../const"
+
 
 const ChapterListOption = ({chapter, onPress}) => {
     return (
@@ -18,32 +20,31 @@ const Material = ({ navigation }) => {
     const [selChapter, setSelChapter] = useState(null)
 
     useEffect(() => {
-        const kanjis = Kanji.kanji_collection
+        const kanjis = Kanji
         const chapterNumbers = kanjis.map(kanji => kanji.chapter)
             .filter((chapter, index, self) => self.indexOf(chapter) === index)
         setChapters([...chapterNumbers])
     }, [])
 
     useEffect(() => {
-        const chapter = Kanji.kanji_collection.filter(kanji => kanji.chapter == selChapter)
+        const chapter = Kanji.filter(kanji => kanji.chapter == selChapter)
         setViewingChapter(chapter)
     }, [selChapter])  
 
     const renderItem = ({item, index}) => {
         return (
-            <TouchableOpacity onPress={() => navigation.push("Study", 
+            <TouchableOpacity onPress={() => navigation.push(SCREEN.STUDY, 
                 { 
                     kanjis: viewingChapter,
                     current: index
                 })}>
-                <Text>{item.name} ({item.pronounciation})</Text>
+                <Text style={{fontSize: 20}}>{item.rune}</Text>
             </TouchableOpacity>
         )
     }
 
     return (
         <Screen>
-
             <View style={[styles.container]}>
             {chapters.map((chapter, index) => {  
                 return (
@@ -55,25 +56,25 @@ const Material = ({ navigation }) => {
                     )
             })}
             </View>
-            <View>
+            <ScrollView>
                 <FlatList
                     data={viewingChapter}
                     renderItem={renderItem}
-                    keyExtractor={(item) => item.name}
+                    keyExtractor={(item) => item.rune}
                     extraData={selChapter}
                 >
                 </FlatList>
-            </View>
+            </ScrollView>
         </Screen>
     )
 }
 
 const styles = StyleSheet.create({
     container: {
-    //   flex: 1,
-    //   backgroundColor: '#fff',
-    //   alignItems: 'center',
-    //   justifyContent: 'center',
+      flex: 1,
+      backgroundColor: '#fff',
+      alignItems: 'center',
+      justifyContent: 'center',
     }
   });
 

@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { Dimensions, ScrollView, StyleSheet, Text, View } from "react-native";
+import Screen from './cmps/screen'
 
 const width = Dimensions.get('window').width;
+
 
 export const HorizontalScroll = ({children}) => {
     return (
@@ -22,9 +24,9 @@ export const Full = (props) => {
     const style = props.style || []
     
     return (
-        <View style={[...style, styles.full]}>
+        <Screen style={[...style, styles.full]}>
             {children}
-        </View>
+        </Screen>
     )
 }
 
