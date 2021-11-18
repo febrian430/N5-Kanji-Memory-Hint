@@ -33,3 +33,9 @@ export const FIELD = {
     MEANING: "meaning",
     IMAGE: "image"
 }
+
+export const JUMBLE = {
+    OUT_OF_DROPZONE: 0,
+    WRONG: -1,
+    CORRECT: 1
+}

@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import { Alert, FlatList, StatusBar, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import shuffle from "../../helper/shuffler";
 import Screen from '../cmps/screen'
-import { Kanji as kanji } from "../../helper/repo"
+import { Distinct as kanji } from "../../helper/repo"
 import { Full } from "../horizontal_scroll";
 import { MODE, FIELD } from "../const";
 

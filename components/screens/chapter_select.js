@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Button, FlatList, StyleSheet, Text, View, TouchableOpacity } from "react-native";
-import { Kanji }  from '../../helper/repo'
+import { Distinct as Kanji }  from '../../helper/repo'
 import Screen from '../cmps/screen'
 
 const Chapter = ({onPress, title, selected}) => {

@@ -1,5 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
 import { Animated, PanResponder, StyleSheet, Text, View } from "react-native";
+import { JUMBLE } from "../const";
 
 // https://stackoverflow.com/questions/56738500/react-native-onlayout-with-react-hooks
 //TODO: 
@@ -8,10 +9,6 @@ import { Animated, PanResponder, StyleSheet, Text, View } from "react-native";
 // set selected when animated object is selected (get by index? maybe selected index?)
 // maybe make options as normal view and spawn an animated view on press
 // when component dropped to area, judge by selected state
-
-const CORRECT = 1
-const WRONG = 0
-const NOT_IN_AREA = -1
 
 const Draggable = ({value, onDrop}) => {
 
@@ -26,9 +23,6 @@ const Draggable = ({value, onDrop}) => {
     setVal(value)
   }, [])
 
-  const panStyle = {
-    transform: pan.getTranslateTransform()
-  }
 
   const panResponder = PanResponder.create({
     onStartShouldSetPanResponder: () => true,
@@ -58,7 +52,7 @@ const Draggable = ({value, onDrop}) => {
           y: gestureState.moveY
         })
       if(!solved) {
-        if(value === CORRECT) {
+        if(value === JUMBLE.CORRECT) {
           alert("correct")
           Animated.timing(opacity, {
             toValue: 0,
@@ -66,7 +60,7 @@ const Draggable = ({value, onDrop}) => {
             useNativeDriver: false
           }).start(() => setSolved(true))
         } else {
-          if(value === WRONG) {
+          if(value === JUMBLE.WRONG) {
             alert("wrong")
           }
           Animated.spring(

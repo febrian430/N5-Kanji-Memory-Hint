@@ -1,6 +1,6 @@
-import Kanji from '../assets/data/test.json'
-// import Kanji from '../assets/data/kanji.json'
-import Distinct from '../assets/data/distinct.json'
+import Distinct from '../assets/data/test.json'
+import Kanji from '../assets/data/kanji.json'
+// import Distinct from '../assets/data/distinct.json'
 
 
 
@@ -32,11 +32,11 @@ const kanjisByChapter = (chapters) => {
 }
 
 const questionsForQuiz = (chapters) => {
-    return shuffle(Kanji.filter(kanji => chapters.includes(kanji.chapter)))
+    return shuffle(Distinct.filter(kanji => chapters.includes(kanji.chapter)))
 }
 
 const optionsForQuiz = (kanji, key) => {
-    const otherOptions = shuffle(Kanji).filter((element) => element[key] !== kanji[key]).map((element) => element[key]).slice(0, 3)
+    const otherOptions = shuffle(Distinct).filter((element) => element[key] !== kanji[key]).map((element) => element[key]).slice(0, 3)
     let options = shuffle([kanji[key], ...otherOptions])
 
     return options
@@ -44,7 +44,7 @@ const optionsForQuiz = (kanji, key) => {
 
 //TODO: change to real kanji
 const questionForJumble = () => {
-    const selectedKanji = shuffle(Kanji)[0]
+    const selectedKanji = shuffle(Distinct)[0]
     const question = { value: selectedKanji.rune, key: selectedKanji.spelling }
     const options = optionsForJumble(selectedKanji)
     return { question, options }
@@ -55,7 +55,7 @@ const questionForJumble = () => {
 const optionsForJumble = (kanji) => {
     const NUM_OF_OPTIONS = 10
     const spelling = kanji.spelling.split('')
-    const otherOpts = shuffle(Kanji.filter(({rune}) => rune !== kanji.rune)
+    const otherOpts = shuffle(Distinct.filter(({rune}) => rune !== kanji.rune)
             .map(({spelling}) => spelling)
             .reduce((prev, val) => prev+val)
             .split('')
