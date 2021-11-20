@@ -5,6 +5,7 @@ import Screen from '../cmps/screen'
 import { Distinct as kanji } from "../../helper/repo"
 import { Full } from "../horizontal_scroll";
 import { MODE, FIELD } from "../const";
+import { MixMatch } from "../../helper/repo";
 
 const Option = ({value, onPress, disabled, selected}) => {
 
@@ -18,9 +19,10 @@ const Option = ({value, onPress, disabled, selected}) => {
   const { backgroundColor, borderColor, color } = style
   const wrapperStyle = { backgroundColor, borderColor }
 
+  //add image style for image meaning round
   return (
-    <TouchableOpacity onPress={onPress} style={[styles.item, wrapperStyle]} disabled={disabled}>
-      <Text style={[styles.title, {color}]}>{value}</Text>
+    <TouchableOpacity onPress={onPress} style={[styles.card, wrapperStyle]} disabled={disabled}>
+      <Text style={[styles.title, {color}, styles.runeText]}>{value}</Text>
     </TouchableOpacity>
   )
 }
@@ -41,25 +43,26 @@ const MemoryHint = ({ route }) => {
         } else {
           return [FIELD.RUNE, FIELD.SPELLING]
         }
-      }
-
+      }   
 
       const selectedChapters = route.params.chapters
       
       const gameMode = route.params.mode
       setMode(gameMode)
-      const [key1, key2] = getKeys(gameMode)
+      const [questionKey, answerKey] = getKeys(gameMode)
 
       console.log("GAME MODE:", gameMode)
 
-      var source = shuffle(kanji.filter((kanji) => selectedChapters.includes(kanji.chapter))).slice(0,5)
-      questions = source.map((element) =>  { return { value: element[key1], key: element[key2] }})
-      answers = source.map((element) => { return { value: element[key2], key: element[key1] }} )
+      // var source = shuffle(kanji.filter((kanji) => selectedChapters.includes(kanji.chapter))).slice(0,5)
+      // questions = source.map((element) =>  { return { value: element[key1], key: element[key2] }})
+      // answers = source.map((element) => { return { value: element[key2], key: element[key1] }} )
 
-      mixed = [...questions, ...answers]
-      mixed = shuffle(mixed)
+      // mixed = [...questions, ...answers]
+      // mixed = shuffle(mixed)
+      const questions = MixMatch.getQuestion(questionKey, answerKey, 6, selectedChapters)
 
-      setOptions([...mixed])
+      setOptions(questions)
+      console.log(questions)
     }, [])
 
     const select = (option) => {
@@ -89,6 +92,10 @@ const MemoryHint = ({ route }) => {
     }
 
     useEffect(() => {
+
+    }, [selected])
+
+    useEffect(() => {
       if(isStarted && solved.length === options.length) {
         alert(`Finished. Wrong attempts: ${wrongCount}`)
       }
@@ -107,16 +114,24 @@ const MemoryHint = ({ route }) => {
     };
 
     return (
-      <Screen>
-        <Full style={[styles.container]}>
-          <FlatList
+      <Full style={[styles.container]}>
+          <View style={[styles.wrapper]}>{/* <FlatList
+            contentContainerStyle={{alignSelf: 'flex-start'}}
+            numColumns={Math.ceil(options.length / 2)}     
             data={options}
             renderItem={renderItem}
             keyExtractor={(item, index) => `${index}`}
             extraData={selected}
-          />
-        </Full>
-      </Screen>
+            numColumns={4}
+          /> */}
+
+          {
+            options.map((item, index) => {
+              return renderItem({ item })
+            })
+          }
+        </View>
+      </Full>
     );
 };  
 
@@ -124,6 +139,23 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     marginTop: StatusBar.currentHeight || 0,
+    
+  },
+  wrapper: {
+    backgroundColor: "aqua",
+    flexWrap: "wrap",
+    justifyContent: "center",
+    alignContent: "center",
+    margin: 20,
+  },
+  card: {
+    margin: 10,
+    borderWidth: 2,
+    padding: 20,
+    height: 150,
+    width: 70,
+    justifyContent: "center",
+    alignContent: "center"
   },
 
   item: {
@@ -154,8 +186,14 @@ const styles = StyleSheet.create({
   },
 
   title: {
-    fontSize: 32,
+    fontSize: 18,
+    // borderWidth: 2
   },
+
+  //add image style
+  runeText: {
+    width: 15
+  }
 });
 
 export default MemoryHint;
