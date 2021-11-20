@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import { Dimensions, ScrollView, StyleSheet, Text, View } from "react-native";
 import Screen from './cmps/screen'
 
-const width = Dimensions.get('window').width;
+const { width, height } = Dimensions.get('window');
+
 
 
 export const HorizontalScroll = ({children}) => {
     return (
         <ScrollView 
-            horizontal 
+            horizontal
             snapToInterval={width}
             disableIntervalMomentum
         >
@@ -33,6 +34,6 @@ export const Full = (props) => {
 const styles = StyleSheet.create({
     full: {
         width: width,
-        // height: height
+        height: height  
     }
 })
